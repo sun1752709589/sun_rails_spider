@@ -4,7 +4,7 @@ namespace :members do
     Rake::Task[:environment].invoke
     puts "--------------catch members start-------------------"
     agent = Mechanize.new
-    (1..100).each do |i|
+    (105..150).each do |i|
       url = "http://www.youyuan.com/find/beijing/mm0-0/advance-0-0-0-0-0-0-0/p#{i}/"
       catch_member(agent,url)
       sleep 0.001
@@ -35,7 +35,7 @@ namespace :members do
       member.member_info = member_info
       member.member_avatar = member_avatar
       member.save
-      puts "#{url[-6..-2]}----------------end-------------------"
     end
+    puts "#{url[-8..-2]}----------------end-------------------"
   end
 end
