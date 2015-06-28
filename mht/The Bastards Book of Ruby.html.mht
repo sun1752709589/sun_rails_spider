@@ -1,0 +1,2139 @@
+From: <Saved by Mozilla 5.0 (X11)>
+Subject: The Bastards Book of Ruby
+Date: Sun, 28 Jun 2015 12:03:02 +0800
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_0000_748E5741.87378862"
+X-MAF-Information: Produced By MAF V3.1.0.1-signed
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_748E5741.87378862
+Content-Type: text/html;
+	charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://ruby.bastardsbook.com/toc/
+
+<!DOCTYPE html><html class=3D" csstransforms no-csstransforms3d csstransiti=
+ons js flexbox canvas canvastext webgl no-touch geolocation postmessage no-=
+websqldatabase indexeddb hashchange history draganddrop websockets rgba hsl=
+a multiplebgs backgroundsize borderimage borderradius boxshadow textshadow=
+ opacity cssanimations csscolumns cssgradients no-cssreflections csstransfo=
+rms csstransforms3d csstransitions fontface video audio localstorage sessio=
+nstorage webworkers applicationcache svg inlinesvg smil svgclippaths" style=
+=3D""><head>
+<meta http-equiv=3D"content-type" content=3D"text/html; charset=3DUTF-8"><s=
+tyle media=3D"screen"></style>
+ <title>The Bastards Book of Ruby</title>
+	<meta charset=3D"UTF-8">
+	<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge,chrome=3D1">
+	<meta property=3D"og:site_name" content=3D"The Bastards Book of Ruby">
+	<meta property=3D"fb:admins" content=3D"daonguyen74">
+	<meta name=3D"author" content=3D"Dan Nguyen">=20
+	<meta name=3D"type" content=3D"book">=20
+	<meta name=3D"keywords" content=3D"programming, Ruby, scripting, data visu=
+alization">
+	<meta name=3D"description" content=3D"A Ruby programming tutorial for jour=
+nalists, researchers, investigators, scientists, analysts and anyone else=
+ in the business of finding information and making it useful and visible.=
+ Programming experience not required, but provided.">
+	<meta name=3D"author" content=3D"Dan Nguyen">
+
+	<script src=3D"urn:snapshot-82BED2B9:http://www.google-analytics.com/ga.js=
+" async=3D"" type=3D"text/javascript"></script><script src=3D"urn:snapshot-=
+2EF5B587:http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"=
+ type=3D"text/javascript"></script>
+
+	<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1=
+.0">
+	<link href=3D"urn:snapshot-0BD211A4:http://fonts.googleapis.com/css?family=
+=3DPT+Sans:400,700,400italic,700italic" rel=3D"stylesheet" type=3D"text/css=
+">
+
+
+	<link href=3D"urn:snapshot-075678C8:http://ruby.bastardsbook.com/assets/sc=
+reen.css" media=3D"screen" rel=3D"stylesheet" type=3D"text/css">
+	<script src=3D"urn:snapshot-1D29D138:http://ruby.bastardsbook.com/assets/a=
+ll.js" type=3D"text/javascript"></script>
+=09
+ <meta content=3D"authenticity_token" name=3D"csrf-param">
+<meta content=3D"6ag+5WtP4rn5iCaXyrWb51STGHzsFu93C4LAGgpVos8=3D" name=3D"cs=
+rf-token">
+
+</head>
+
+	<body onload=3D"" class=3D"books-toc">=09
+	=09
+		<div id=3D"alert" class=3D"banner">
+			<strong>12/03/2011:</strong> This book is in the <u>very preliminary sta=
+ges</u>. None of the content is guaranteed to be thorough or accurate. See=
+ the <a href=3D"http://ruby.bastardsbook.com/about">About Page</a>.
+		</div>
+	<header class=3D"site container">
+	<div class=3D"row">
+	=09
+		<div class=3D"title"><a href=3D"http://ruby.bastardsbook.com/">The Bastar=
+ds Book of Ruby</a></div>
+		<div class=3D"">=09
+			<hgroup>
+					<div class=3D"tagline">A Programming Primer for Counting and Other Unc=
+onventional Tasks
+					</div>
+			</hgroup>
+		</div>=09
+
+		<div class=3D"">
+			<nav class=3D"site top">
+				<ul>
+	<li><a href=3D"http://ruby.bastardsbook.com/">Home</a></li>
+	<li><a href=3D"http://ruby.bastardsbook.com/about">About</a></li>
+	<li><a href=3D"http://ruby.bastardsbook.com/toc">Contents</a></li>
+	<li><a href=3D"http://ruby.bastardsbook.com/resources">Resources</a></li>
+	<li><a href=3D"http://blog.bastardsbook.com/">Blog</a></li>
+=09
+	<li><a href=3D"#contact">Contact</a></li>
+</ul>
+			</nav>
+		</div>
+
+	</div>
+</header>
+
+
+=09
+=09
+	<div class=3D"site container clearfix">
+		<div id=3D"banner-matter">
+		=09
+		</div>=09
+
+		<div class=3D"row">
+			<div class=3D"content books toc clearfix">
+			=09
+				<article>
+<section id=3D"overview">
+	<h1>Table of contents</h1>
+	<p>
+	These are the <strong>33 chapters</strong> that I've so far started writin=
+g, divided into <strong>4 sections</strong>. I've included a factbox for ea=
+ch chapter to indicate how complete it is.
+	</p>
+=09
+	<ul id=3D"top-list">
+		<li>=E2=80=A2=C2=A0<a href=3D"#fundamentals">The Fundamentals</a></li>
+		<li>=E2=80=A2=C2=A0<a href=3D"#supplementals">Supplementals</a></li>
+		<li>=E2=80=A2=C2=A0<a href=3D"#theory">Design and Theory</a></li>
+		<li>=E2=80=A2=C2=A0<a href=3D"#projects">The Projects</a></li>
+	</ul>
+=09
+	<p>The <strong>Fundamentals</strong> section is probably best read chronol=
+ogically. If you already know how to program, the <strong>Supplemental</str=
+ong> chapters and <strong>Projects</strong>  cover a wide range of real-wor=
+ld use cases that might interest you.</p>
+=09
+	<p>Please read the <a href=3D"http://ruby.bastardsbook.com/about">About pa=
+ge</a> for more details on the progress of this book.</p>
+</section>
+<section>=09
+	<ul class=3D"sections">
+	=09
+		<li class=3D"section clearfix">
+			<a name=3D"fundamentals"></a>
+			<h2>The Fundamentals </h2>
+			<div class=3D"description">
+			=09
+		<p>This section is a <em>very</em> abridged introduction to computer scie=
+nce and contains the <em>bare minimum</em> that I think you need to learn=
+ before being able to see programming as "not magic."  The first chapter is=
+ an installation guide and an introduction to the command line. The chapter=
+ after that exist solely as a copy-and-paste exercise, so you can at least=
+ experience how easy it is to run code.</p>
+		<p>Then it's the basics: numbers, strings, variables, methods, loops and=
+ more. At a surface level, Ruby is a language. And just as in French, befor=
+e you you can converse and flirt in it, you need to learn about conjugation=
+, tenses, and how to form sentences like <em> "Je ne suis pas all=C3=A9 =C3=
+=A0 la biblioth=C3=A8que pour manger le fromage."</em></p>
+	=09
+	=09
+
+
+			</div>
+		=09
+		</li>
+			<ul class=3D"chapters">
+
+			=09
+				<li class=3D"clearfix chapter ">
+					<h3><a href=3D"http://ruby.bastardsbook.com/chapters/installation">Ins=
+tallation</a></h3>
+				=09
+										<div class=3D"topper">
+									=09
+				=09
+					<div class=3D"description">
+						Install Ruby, learn about the command line, and say Hello to the worl=
+d=20
+					</div>=09
+
+						<ul class=3D"parts">
+							<li>=E2=80=A2=C2=A0Troubleshoot First</li>
+							<li>=E2=80=A2=C2=A0The Command Line</li>
+							<li>=E2=80=A2=C2=A0Installing Ruby</li>
+							<li>=E2=80=A2=C2=A0Testing Your Ruby Installation</li>
+							<li>=E2=80=A2=C2=A0Write and Run Your First Program</li>
+							<li>=E2=80=A2=C2=A0Get a Text Editor Designed for Coding</li>
+							<li>=E2=80=A2=C2=A0How to Run a Program in Your Text Editor</li>
+							<li>=E2=80=A2=C2=A0Executing Ruby scripts from the command-line</li>
+							<li>=E2=80=A2=C2=A0Troubleshooting</li>
+						</ul>
+					</div><!-- end topper -->=09
+				=09
+					<div class=3D"chapter-stats-wrap">
+						<table class=3D"data chapter-stats">
+							<tbody><tr>=09
+								<td><strong>Status</strong></td>
+								<td><strong>Decent draft</strong></td>
+							</tr>
+							<tr>=09
+								<td>Words</td>
+								<td>3,595</td>
+							</tr>
+							<tr>
+								<td>Lines of code</td>
+								<td>5</td>
+							</tr>
+							<tr>
+								<td>Exercises</td>
+								<td>0</td>
+							</tr>
+							<tr>=09
+								<td>Pictures</td>
+								<td>29</td>
+							</tr>
+						=09
+						</tbody></table>
+						</div>
+				</li>
+
+			=09
+				<li class=3D"clearfix chapter ">
+					<h3><a href=3D"http://ruby.bastardsbook.com/chapters/intro_tweet_fetch=
+">Tweet Fetching</a></h3>
+				=09
+										<div class=3D"topper">
+									=09
+				=09
+					<div class=3D"description">
+						A walkthrough of the concepts covered in this book with the Twitter=
+ API.
+					</div>=09
+
+						<ul class=3D"parts">
+							<li>=E2=80=A2=C2=A0Making a "scarf"</li>
+							<li>=E2=80=A2=C2=A0What this code does</li>
+							<li>=E2=80=A2=C2=A0Setup your workspace</li>
+							<li>=E2=80=A2=C2=A0Downloading Wikipedia pages</li>
+							<li>=E2=80=A2=C2=A0Variables and methods</li>
+							<li>=E2=80=A2=C2=A0Writing and reading to files</li>
+							<li>=E2=80=A2=C2=A0Collections and Loops</li>
+							<li>=E2=80=A2=C2=A0Tweet Fetching</li>
+							<li>=E2=80=A2=C2=A0Parsing the Tweets</li>
+							<li>=E2=80=A2=C2=A0On to the theory</li>
+						</ul>
+					</div><!-- end topper -->=09
+				=09
+					<div class=3D"chapter-stats-wrap">
+						<table class=3D"data chapter-stats">
+							<tbody><tr>=09
+								<td><strong>Status</strong></td>
+								<td><strong>Decent draft</strong></td>
+							</tr>
+							<tr>=09
+								<td>Words</td>
+								<td>4,754</td>
+							</tr>
+							<tr>
+								<td>Lines of code</td>
+								<td>792</td>
+							</tr>
+							<tr>
+								<td>Exercises</td>
+								<td>0</td>
+							</tr>
+							<tr>=09
+								<td>Pictures</td>
+								<td>12</td>
+							</tr>
+						=09
+						</tbody></table>
+						</div>
+				</li>
+
+			=09
+				<li class=3D"clearfix chapter ">
+					<h3><a href=3D"http://ruby.bastardsbook.com/chapters/conventions">Styl=
+e, Conventions, and Debugging</a></h3>
+				=09
+										<div class=3D"topper">
+									=09
+				=09
+					<div class=3D"description">
+						Some basics on reading, annotating, and debugging code.
+					</div>=09
+
+						<ul class=3D"parts">
+							<li>=E2=80=A2=C2=A0General program structure</li>
+							<li>=E2=80=A2=C2=A0Comments</li>
+							<li>=E2=80=A2=C2=A0Whitespace</li>
+							<li>=E2=80=A2=C2=A0Variations in style</li>
+							<li>=E2=80=A2=C2=A0Debugging with a deep breath</li>
+						</ul>
+					</div><!-- end topper -->=09
+				=09
+					<div class=3D"chapter-stats-wrap">
+						<table class=3D"data chapter-stats">
+							<tbody><tr>=09
+								<td><strong>Status</strong></td>
+								<td><strong>Draft</strong></td>
+							</tr>
+							<tr>=09
+								<td>Words</td>
+								<td>1,795</td>
+							</tr>
+							<tr>
+								<td>Lines of code</td>
+								<td>206</td>
+							</tr>
+							<tr>
+								<td>Exercises</td>
+								<td>0</td>
+							</tr>
+							<tr>=09
+								<td>Pictures</td>
+								<td>3</td>
+							</tr>
+						=09
+						</tbody></table>
+						</div>
+				</li>
+
+			=09
+				<li class=3D"clearfix chapter ">
+					<h3><a href=3D"http://ruby.bastardsbook.com/chapters/numbers">Numbers<=
+/a></h3>
+				=09
+										<div class=3D"topper">
+									=09
+				=09
+					<div class=3D"description">
+						Ruby's basic data objects for counting and math
+					</div>=09
+
+						<ul class=3D"parts">
+							<li>=E2=80=A2=C2=A0Number classes</li>
+							<li>=E2=80=A2=C2=A0Operators</li>
+							<li>=E2=80=A2=C2=A0Number methods</li>
+						</ul>
+					</div><!-- end topper -->=09
+				=09
+					<div class=3D"chapter-stats-wrap">
+						<table class=3D"data chapter-stats">
+							<tbody><tr>=09
+								<td><strong>Status</strong></td>
+								<td><strong>Draft</strong></td>
+							</tr>
+							<tr>=09
+								<td>Words</td>
+								<td>666</td>
+							</tr>
+							<tr>
+								<td>Lines of code</td>
+								<td>56</td>
+							</tr>
+							<tr>
+								<td>Exercises</td>
+								<td>1</td>
+							</tr>
+							<tr>=09
+								<td>Pictures</td>
+								<td>1</td>
+							</tr>
+						=09
+						</tbody></table>
+						</div>
+				</li>
+
+			=09
+				<li class=3D"clearfix chapter ">
+					<h3><a href=3D"http://ruby.bastardsbook.com/chapters/strings">Strings<=
+/a></h3>
+				=09
+										<div class=3D"topper">
+									=09
+				=09
+					<div class=3D"description">
+						Letters, words, paragraphs, books. And quotes.
+					</div>=09
+
+						<ul class=3D"parts">
+							<li>=E2=80=A2=C2=A0Text, words, characters</li>
+							<li>=E2=80=A2=C2=A0String operations and methods</li>
+							<li>=E2=80=A2=C2=A0Mixing datatypes</li>
+							<li>=E2=80=A2=C2=A0Combining strings with interpolation</li>
+							<li>=E2=80=A2=C2=A0"Escape" with backslash</li>
+							<li>=E2=80=A2=C2=A0String substitution</li>
+						</ul>
+					</div><!-- end topper -->=09
+				=09
+					<div class=3D"chapter-stats-wrap">
+						<table class=3D"data chapter-stats">
+							<tbody><tr>=09
+								<td><strong>Status</strong></td>
+								<td><strong>Draft</strong></td>
+							</tr>
+							<tr>=09
+								<td>Words</td>
+								<td>1,731</td>
+							</tr>
+							<tr>
+								<td>Lines of code</td>
+								<td>105</td>
+							</tr>
+							<tr>
+								<td>Exercises</td>
+								<td>3</td>
+							</tr>
+							<tr>=09
+								<td>Pictures</td>
+								<td>2</td>
+							</tr>
+						=09
+						</tbody></table>
+						</div>
+				</li>
+
+			=09
+				<li class=3D"clearfix chapter ">
+					<h3><a href=3D"http://ruby.bastardsbook.com/chapters/variables">Variab=
+les</a></h3>
+				=09
+										<div class=3D"topper">
+									=09
+				=09
+					<div class=3D"description">
+						Labels for pointing to your data.
+					</div>=09
+
+						<ul class=3D"parts">
+							<li>=E2=80=A2=C2=A0Explaining variables with analogies</li>
+							<li>=E2=80=A2=C2=A0Basic usage of variables</li>
+							<li>=E2=80=A2=C2=A0Assignments</li>
+							<li>=E2=80=A2=C2=A0References, references, references</li>
+							<li>=E2=80=A2=C2=A0A visual guide to variables</li>
+							<li>=E2=80=A2=C2=A0The classic variable swap</li>
+						</ul>
+					</div><!-- end topper -->=09
+				=09
+					<div class=3D"chapter-stats-wrap">
+						<table class=3D"data chapter-stats">
+							<tbody><tr>=09
+								<td><strong>Status</strong></td>
+								<td><strong>Draft</strong></td>
+							</tr>
+							<tr>=09
+								<td>Words</td>
+								<td>4,624</td>
+							</tr>
+							<tr>
+								<td>Lines of code</td>
+								<td>310</td>
+							</tr>
+							<tr>
+								<td>Exercises</td>
+								<td>6</td>
+							</tr>
+							<tr>=09
+								<td>Pictures</td>
+								<td>13</td>
+							</tr>
+						=09
+						</tbody></table>
+						</div>
+				</li>
+
+			=09
+				<li class=3D"clearfix chapter ">
+					<h3><a href=3D"http://ruby.bastardsbook.com/chapters/methods">Methods<=
+/a></h3>
+				=09
+										<div class=3D"topper">
+									=09
+				=09
+					<div class=3D"description">
+						How to do things using other programmers' code.
+					</div>=09
+
+						<ul class=3D"parts">
+							<li>=E2=80=A2=C2=A0Hello again, "Hello World"</li>
+							<li>=E2=80=A2=C2=A0Anatomy of a method</li>
+							<li>=E2=80=A2=C2=A0Scope</li>
+							<li>=E2=80=A2=C2=A0Method design</li>
+							<li>=E2=80=A2=C2=A0Syntax and shortcuts</li>
+							<li>=E2=80=A2=C2=A0The open method</li>
+							<li>=E2=80=A2=C2=A0Methods and classes</li>
+						</ul>
+					</div><!-- end topper -->=09
+				=09
+					<div class=3D"chapter-stats-wrap">
+						<table class=3D"data chapter-stats">
+							<tbody><tr>=09
+								<td><strong>Status</strong></td>
+								<td><strong>Draft</strong></td>
+							</tr>
+							<tr>=09
+								<td>Words</td>
+								<td>3,186</td>
+							</tr>
+							<tr>
+								<td>Lines of code</td>
+								<td>533</td>
+							</tr>
+							<tr>
+								<td>Exercises</td>
+								<td>8</td>
+							</tr>
+							<tr>=09
+								<td>Pictures</td>
+								<td>4</td>
+							</tr>
+						=09
+						</tbody></table>
+						</div>
+				</li>
+
+			=09
+				<li class=3D"clearfix chapter ">
+					<h3><a href=3D"http://ruby.bastardsbook.com/chapters/methods-and-gems"=
+>Methods Part II: RubyGems</a></h3>
+				=09
+										<div class=3D"topper">
+									=09
+				=09
+					<div class=3D"description">
+						Ruby's convenient distribution system for getting everyone else's con=
+venient code
+					</div>=09
+
+						<ul class=3D"parts">
+							<li>=E2=80=A2=C2=A0Installing Gems With RubyGems</li>
+							<li>=E2=80=A2=C2=A0Fetch data from the Internet with the Rest-Client=
+ gem</li>
+							<li>=E2=80=A2=C2=A0Application Programming Interfaces (APIs)</li>
+							<li>=E2=80=A2=C2=A0Google's Geocoding API</li>
+							<li>=E2=80=A2=C2=A0Crack XML with the Crack Gem</li>
+						</ul>
+					</div><!-- end topper -->=09
+				=09
+					<div class=3D"chapter-stats-wrap">
+						<table class=3D"data chapter-stats">
+							<tbody><tr>=09
+								<td><strong>Status</strong></td>
+								<td><strong>Decent draft</strong></td>
+							</tr>
+							<tr>=09
+								<td>Words</td>
+								<td>1,391</td>
+							</tr>
+							<tr>
+								<td>Lines of code</td>
+								<td>54</td>
+							</tr>
+							<tr>
+								<td>Exercises</td>
+								<td>2</td>
+							</tr>
+							<tr>=09
+								<td>Pictures</td>
+								<td>4</td>
+							</tr>
+						=09
+						</tbody></table>
+						</div>
+				</li>
+
+			=09
+				<li class=3D"clearfix chapter ">
+					<h3><a href=3D"http://ruby.bastardsbook.com/chapters/ifelse">If and El=
+se</a></h3>
+				=09
+										<div class=3D"topper">
+									=09
+				=09
+					<div class=3D"description">
+						Breaking out from a narrow, straight path of program flow.
+					</div>=09
+
+						<ul class=3D"parts">
+							<li>=E2=80=A2=C2=A0The if</li>
+							<li>=E2=80=A2=C2=A0Booleans: the truth about true and false</li>
+							<li>=E2=80=A2=C2=A0Going elsewhere</li>
+							<li>=E2=80=A2=C2=A0Variations on if</li>
+							<li>=E2=80=A2=C2=A0Logic and flow</li>
+							<li>=E2=80=A2=C2=A0The FizzBuzz Game</li>
+						</ul>
+					</div><!-- end topper -->=09
+				=09
+					<div class=3D"chapter-stats-wrap">
+						<table class=3D"data chapter-stats">
+							<tbody><tr>=09
+								<td><strong>Status</strong></td>
+								<td><strong>Draft</strong></td>
+							</tr>
+							<tr>=09
+								<td>Words</td>
+								<td>2,316</td>
+							</tr>
+							<tr>
+								<td>Lines of code</td>
+								<td>243</td>
+							</tr>
+							<tr>
+								<td>Exercises</td>
+								<td>4</td>
+							</tr>
+							<tr>=09
+								<td>Pictures</td>
+								<td>1</td>
+							</tr>
+						=09
+						</tbody></table>
+						</div>
+				</li>
+
+			=09
+				<li class=3D"clearfix chapter ">
+					<h3><a href=3D"http://ruby.bastardsbook.com/chapters/loops">Loops</a><=
+/h3>
+				=09
+										<div class=3D"topper">
+									=09
+				=09
+					<div class=3D"description">
+						How to do thousands of operations with a few lines of code.
+					</div>=09
+
+						<ul class=3D"parts">
+							<li>=E2=80=A2=C2=A0The for Statement</li>
+							<li>=E2=80=A2=C2=A0Other loops</li>
+							<li>=E2=80=A2=C2=A0Rubyists prefer each</li>
+						</ul>
+					</div><!-- end topper -->=09
+				=09
+					<div class=3D"chapter-stats-wrap">
+						<table class=3D"data chapter-stats">
+							<tbody><tr>=09
+								<td><strong>Status</strong></td>
+								<td><strong>Draft</strong></td>
+							</tr>
+							<tr>=09
+								<td>Words</td>
+								<td>1,110</td>
+							</tr>
+							<tr>
+								<td>Lines of code</td>
+								<td>114</td>
+							</tr>
+							<tr>
+								<td>Exercises</td>
+								<td>4</td>
+							</tr>
+							<tr>=09
+								<td>Pictures</td>
+								<td>1</td>
+							</tr>
+						=09
+						</tbody></table>
+						</div>
+				</li>
+
+			=09
+				<li class=3D"clearfix chapter ">
+					<h3><a href=3D"http://ruby.bastardsbook.com/chapters/collections">Coll=
+ections</a></h3>
+				=09
+										<div class=3D"topper">
+									=09
+				=09
+					<div class=3D"description">
+						How to store lists of data.
+					</div>=09
+
+						<ul class=3D"parts">
+							<li>=E2=80=A2=C2=A0Arrays</li>
+							<li>=E2=80=A2=C2=A0Other array methods</li>
+							<li>=E2=80=A2=C2=A0Working with partial arrays</li>
+							<li>=E2=80=A2=C2=A0Hashes</li>
+							<li>=E2=80=A2=C2=A0Nested collections</li>
+							<li>=E2=80=A2=C2=A0Revisiting the crack gem</li>
+						</ul>
+					</div><!-- end topper -->=09
+				=09
+					<div class=3D"chapter-stats-wrap">
+						<table class=3D"data chapter-stats">
+							<tbody><tr>=09
+								<td><strong>Status</strong></td>
+								<td><strong>Draft</strong></td>
+							</tr>
+							<tr>=09
+								<td>Words</td>
+								<td>3,347</td>
+							</tr>
+							<tr>
+								<td>Lines of code</td>
+								<td>487</td>
+							</tr>
+							<tr>
+								<td>Exercises</td>
+								<td>11</td>
+							</tr>
+							<tr>=09
+								<td>Pictures</td>
+								<td>2</td>
+							</tr>
+						=09
+						</tbody></table>
+						</div>
+				</li>
+
+			=09
+				<li class=3D"clearfix chapter ">
+					<h3><a href=3D"http://ruby.bastardsbook.com/chapters/enumerables">Enum=
+erables</a></h3>
+				=09
+										<div class=3D"topper">
+									=09
+				=09
+					<div class=3D"description">
+						Transforming and sorting collections
+					</div>=09
+
+						<ul class=3D"parts">
+							<li>=E2=80=A2=C2=A0The each</li>
+							<li>=E2=80=A2=C2=A0Transforming arrays with map</li>
+							<li>=E2=80=A2=C2=A0The select and inject methods</li>
+						</ul>
+					</div><!-- end topper -->=09
+				=09
+					<div class=3D"chapter-stats-wrap">
+						<table class=3D"data chapter-stats">
+							<tbody><tr>=09
+								<td><strong>Status</strong></td>
+								<td><strong>Draft</strong></td>
+							</tr>
+							<tr>=09
+								<td>Words</td>
+								<td>1,355</td>
+							</tr>
+							<tr>
+								<td>Lines of code</td>
+								<td>248</td>
+							</tr>
+							<tr>
+								<td>Exercises</td>
+								<td>7</td>
+							</tr>
+							<tr>=09
+								<td>Pictures</td>
+								<td>1</td>
+							</tr>
+						=09
+						</tbody></table>
+						</div>
+				</li>
+
+			=09
+				<li class=3D"clearfix chapter ">
+					<h3><a href=3D"http://ruby.bastardsbook.com/chapters/io">File input/ou=
+tput</a></h3>
+				=09
+										<div class=3D"topper">
+									=09
+				=09
+					<div class=3D"description">
+						Reading from and writing directly to files
+					</div>=09
+
+						<ul class=3D"parts">
+							<li>=E2=80=A2=C2=A0Creating a file and writing to it</li>
+							<li>=E2=80=A2=C2=A0Reading from a file</li>
+							<li>=E2=80=A2=C2=A0Closing files</li>
+							<li>=E2=80=A2=C2=A0File existence and properties</li>
+						</ul>
+					</div><!-- end topper -->=09
+				=09
+					<div class=3D"chapter-stats-wrap">
+						<table class=3D"data chapter-stats">
+							<tbody><tr>=09
+								<td><strong>Status</strong></td>
+								<td><strong>Decent draft</strong></td>
+							</tr>
+							<tr>=09
+								<td>Words</td>
+								<td>1,778</td>
+							</tr>
+							<tr>
+								<td>Lines of code</td>
+								<td>198</td>
+							</tr>
+							<tr>
+								<td>Exercises</td>
+								<td>6</td>
+							</tr>
+							<tr>=09
+								<td>Pictures</td>
+								<td>4</td>
+							</tr>
+						=09
+						</tbody></table>
+						</div>
+				</li>
+
+			=09
+				<li class=3D"clearfix chapter ">
+					<h3><a href=3D"http://ruby.bastardsbook.com/chapters/conclusion">Revie=
+wing Tweet Fetching</a></h3>
+				=09
+										<div class=3D"topper">
+									=09
+				=09
+					<div class=3D"description">
+						(An outdated section, but useful for reviewing)
+					</div>=09
+
+						<ul class=3D"parts">
+							<li>=E2=80=A2=C2=A0The Code</li>
+							<li>=E2=80=A2=C2=A0Initializing gems and variables</li>
+							<li>=E2=80=A2=C2=A0Following Twitter's API</li>
+							<li>=E2=80=A2=C2=A0GET with RestClient</li>
+							<li>=E2=80=A2=C2=A0Use crack to read the XML response</li>
+							<li>=E2=80=A2=C2=A0Request the Tweets, Repeat</li>
+							<li>=E2=80=A2=C2=A0There's a gem for that</li>
+							<li>=E2=80=A2=C2=A0Fundamentals and more</li>
+						</ul>
+					</div><!-- end topper -->=09
+				=09
+					<div class=3D"chapter-stats-wrap">
+						<table class=3D"data chapter-stats">
+							<tbody><tr>=09
+								<td><strong>Status</strong></td>
+								<td><strong>Deprecated</strong></td>
+							</tr>
+							<tr>=09
+								<td>Words</td>
+								<td>1,339</td>
+							</tr>
+							<tr>
+								<td>Lines of code</td>
+								<td>120</td>
+							</tr>
+							<tr>
+								<td>Exercises</td>
+								<td>0</td>
+							</tr>
+							<tr>=09
+								<td>Pictures</td>
+								<td>1</td>
+							</tr>
+						=09
+						</tbody></table>
+						</div>
+				</li>
+			</ul>
+	=09
+		<li class=3D"section clearfix">
+			<a name=3D"supplementals"></a>
+			<h2>Supplementals </h2>
+			<div class=3D"description">
+					<p>These chapters aren't necessary in understand the foundations of pr=
+ogramming, but they're critical to making your programming knowledge useful=
+ in real-world applications.</p>
+	<p>Some of these concepts have little to do with programming, so it's poss=
+ible to read their chapters without intending to learn programming. <strong=
+>Regular expressions</strong>, in particular, are valuable to anyone who ha=
+s to deal with cleaning and verifying datasets. I've devoted several chapte=
+rs to web-scraping on the assumption that some readers may have little work=
+ing knowledge about HTML, Javascript, and the other underlying web technolo=
+gies.</p>
+	  =20
+=09
+
+
+
+			</div>
+		=09
+		</li>
+			<ul class=3D"chapters">
+
+			=09
+				<li class=3D"clearfix chapter ">
+					<h3><a href=3D"http://ruby.bastardsbook.com/chapters/regexes">Regular=
+ Expressions</a></h3>
+				=09
+										<div class=3D"topper">
+									=09
+				=09
+					<div class=3D"description">
+						An essential mini-language for text-matching and manipulation
+					</div>=09
+
+						<ul class=3D"parts">
+							<li>=E2=80=A2=C2=A0Try Regexes in Your Text Editor</li>
+							<li>=E2=80=A2=C2=A0Introduction to regex syntax</li>
+							<li>=E2=80=A2=C2=A0Ruby and regexes</li>
+							<li>=E2=80=A2=C2=A0More regex patterns</li>
+							<li>=E2=80=A2=C2=A0Get a cheat sheet</li>
+						</ul>
+					</div><!-- end topper -->=09
+				=09
+					<div class=3D"chapter-stats-wrap">
+						<table class=3D"data chapter-stats">
+							<tbody><tr>=09
+								<td><strong>Status</strong></td>
+								<td><strong>Incomplete draft</strong></td>
+							</tr>
+							<tr>=09
+								<td>Words</td>
+								<td>5,824</td>
+							</tr>
+							<tr>
+								<td>Lines of code</td>
+								<td>183</td>
+							</tr>
+							<tr>
+								<td>Exercises</td>
+								<td>7</td>
+							</tr>
+							<tr>=09
+								<td>Pictures</td>
+								<td>7</td>
+							</tr>
+						=09
+						</tbody></table>
+						</div>
+				</li>
+
+			=09
+				<li class=3D"clearfix chapter ">
+					<h3><a href=3D"http://ruby.bastardsbook.com/chapters/web-scraping">An=
+ Intro to Web Scraping</a></h3>
+				=09
+										<div class=3D"topper">
+									=09
+				=09
+					<div class=3D"description">
+						A simplifed overview of how data gets to and from the web browser
+					</div>=09
+
+						<ul class=3D"parts">
+							<li>=E2=80=A2=C2=A0Scraping: The big picture</li>
+							<li>=E2=80=A2=C2=A0The scraping roadmap</li>
+						</ul>
+					</div><!-- end topper -->=09
+				=09
+					<div class=3D"chapter-stats-wrap">
+						<table class=3D"data chapter-stats">
+							<tbody><tr>=09
+								<td><strong>Status</strong></td>
+								<td><strong>Draft</strong></td>
+							</tr>
+							<tr>=09
+								<td>Words</td>
+								<td>2,172</td>
+							</tr>
+							<tr>
+								<td>Lines of code</td>
+								<td>10</td>
+							</tr>
+							<tr>
+								<td>Exercises</td>
+								<td>0</td>
+							</tr>
+							<tr>=09
+								<td>Pictures</td>
+								<td>6</td>
+							</tr>
+						=09
+						</tbody></table>
+						</div>
+				</li>
+
+			=09
+				<li class=3D"clearfix chapter ">
+					<h3><a href=3D"http://ruby.bastardsbook.com/chapters/web-inspecting-ht=
+ml">Meet Your Web Inspector</a></h3>
+				=09
+										<div class=3D"topper">
+									=09
+				=09
+					<div class=3D"description">
+						The built-in tool for to easily examine the structure of webpages.
+					</div>=09
+
+						<ul class=3D"parts">
+							<li>=E2=80=A2=C2=A0Your browser's web inspector</li>
+							<li>=E2=80=A2=C2=A0Use the Inspector to read HTML</li>
+						</ul>
+					</div><!-- end topper -->=09
+				=09
+					<div class=3D"chapter-stats-wrap">
+						<table class=3D"data chapter-stats">
+							<tbody><tr>=09
+								<td><strong>Status</strong></td>
+								<td><strong>Decent draft</strong></td>
+							</tr>
+							<tr>=09
+								<td>Words</td>
+								<td>1,292</td>
+							</tr>
+							<tr>
+								<td>Lines of code</td>
+								<td>10</td>
+							</tr>
+							<tr>
+								<td>Exercises</td>
+								<td>0</td>
+							</tr>
+							<tr>=09
+								<td>Pictures</td>
+								<td>11</td>
+							</tr>
+						=09
+						</tbody></table>
+						</div>
+				</li>
+
+			=09
+				<li class=3D"clearfix chapter ">
+					<h3><a href=3D"http://ruby.bastardsbook.com/chapters/web-inspecting-tr=
+affic">Inspecting a Webpage's Traffic</a></h3>
+				=09
+										<div class=3D"topper">
+									=09
+				=09
+					<div class=3D"description">
+						Using the web inspector to watch a webpage's incoming and outgoing tr=
+affic.
+					</div>=09
+
+						<ul class=3D"parts">
+							<li>=E2=80=A2=C2=A0Activate your network panel</li>
+							<li>=E2=80=A2=C2=A0Inspecting a webpage's assets</li>
+							<li>=E2=80=A2=C2=A0Inspecting the requests</li>
+							<li>=E2=80=A2=C2=A0Inspecting the server's response</li>
+						</ul>
+					</div><!-- end topper -->=09
+				=09
+					<div class=3D"chapter-stats-wrap">
+						<table class=3D"data chapter-stats">
+							<tbody><tr>=09
+								<td><strong>Status</strong></td>
+								<td><strong>Decent draft</strong></td>
+							</tr>
+							<tr>=09
+								<td>Words</td>
+								<td>2,500</td>
+							</tr>
+							<tr>
+								<td>Lines of code</td>
+								<td>21</td>
+							</tr>
+							<tr>
+								<td>Exercises</td>
+								<td>0</td>
+							</tr>
+							<tr>=09
+								<td>Pictures</td>
+								<td>23</td>
+							</tr>
+						=09
+						</tbody></table>
+						</div>
+				</li>
+
+			=09
+				<li class=3D"clearfix chapter ">
+					<h3><a href=3D"http://ruby.bastardsbook.com/chapters/html-parsing">Par=
+sing HTML with Nokogiri</a></h3>
+				=09
+										<div class=3D"topper">
+									=09
+				=09
+					<div class=3D"description">
+						Quickly extract data from raw HTML with the Nokogiri gem
+					</div>=09
+
+						<ul class=3D"parts">
+							<li>=E2=80=A2=C2=A0Nokogiri</li>
+							<li>=E2=80=A2=C2=A0Nokogiri and CSS selectors</li>
+							<li>=E2=80=A2=C2=A0Nokogiri and your web inspector</li>
+						</ul>
+					</div><!-- end topper -->=09
+				=09
+					<div class=3D"chapter-stats-wrap">
+						<table class=3D"data chapter-stats">
+							<tbody><tr>=09
+								<td><strong>Status</strong></td>
+								<td><strong>Decent draft</strong></td>
+							</tr>
+							<tr>=09
+								<td>Words</td>
+								<td>1,629</td>
+							</tr>
+							<tr>
+								<td>Lines of code</td>
+								<td>120</td>
+							</tr>
+							<tr>
+								<td>Exercises</td>
+								<td>2</td>
+							</tr>
+							<tr>=09
+								<td>Pictures</td>
+								<td>3</td>
+							</tr>
+						=09
+						</tbody></table>
+						</div>
+				</li>
+
+			=09
+				<li class=3D"clearfix chapter ">
+					<h3><a href=3D"http://ruby.bastardsbook.com/chapters/web-crawling">Wri=
+ting a Web Crawler</a></h3>
+				=09
+										<div class=3D"topper">
+									=09
+				=09
+					<div class=3D"description">
+						Combining HTML parsing and web inspection to programmatically navigat=
+e and scrape websites.
+					</div>=09
+
+						<ul class=3D"parts">
+							<li>=E2=80=A2=C2=A0Why not wget?</li>
+							<li>=E2=80=A2=C2=A0Move Link-to-Link (Wikipedia)</li>
+							<li>=E2=80=A2=C2=A0Change URL parameters (Data.gov)</li>
+							<li>=E2=80=A2=C2=A0Detecting redirects (Defense.gov)</li>
+							<li>=E2=80=A2=C2=A0POST requests (FEC.gov)</li>
+							<li>=E2=80=A2=C2=A0Use the Mechanize gem</li>
+							<li>=E2=80=A2=C2=A0Unscrapable sites</li>
+							<li>=E2=80=A2=C2=A0Poking around</li>
+						</ul>
+					</div><!-- end topper -->=09
+				=09
+					<div class=3D"chapter-stats-wrap">
+						<table class=3D"data chapter-stats">
+							<tbody><tr>=09
+								<td><strong>Status</strong></td>
+								<td><strong>Draft</strong></td>
+							</tr>
+							<tr>=09
+								<td>Words</td>
+								<td>4,601</td>
+							</tr>
+							<tr>
+								<td>Lines of code</td>
+								<td>460</td>
+							</tr>
+							<tr>
+								<td>Exercises</td>
+								<td>0</td>
+							</tr>
+							<tr>=09
+								<td>Pictures</td>
+								<td>28</td>
+							</tr>
+						=09
+						</tbody></table>
+						</div>
+				</li>
+
+			=09
+				<li class=3D"clearfix chapter ">
+					<h3><a href=3D"http://ruby.bastardsbook.com/chapters/mechanize">The Me=
+chanize Gem</a></h3>
+				=09
+										<div class=3D"topper">
+									=09
+				=09
+					<div class=3D"description">
+						Automate the annoying parts of web-scraping
+					</div>=09
+
+						<ul class=3D"parts">
+							<li>=E2=80=A2=C2=A0Simplify the scraping of complex websites</li>
+							<li>=E2=80=A2=C2=A0Mechanize in action</li>
+						</ul>
+					</div><!-- end topper -->=09
+				=09
+					<div class=3D"chapter-stats-wrap">
+						<table class=3D"data chapter-stats">
+							<tbody><tr>=09
+								<td><strong>Status</strong></td>
+								<td><strong>Stub</strong></td>
+							</tr>
+							<tr>=09
+								<td>Words</td>
+								<td>451</td>
+							</tr>
+							<tr>
+								<td>Lines of code</td>
+								<td>57</td>
+							</tr>
+							<tr>
+								<td>Exercises</td>
+								<td>0</td>
+							</tr>
+							<tr>=09
+								<td>Pictures</td>
+								<td>1</td>
+							</tr>
+						=09
+						</tbody></table>
+						</div>
+				</li>
+
+			=09
+				<li class=3D"clearfix chapter ">
+					<h3><a href=3D"http://ruby.bastardsbook.com/chapters/sql">SQL</a></h3>
+				=09
+										<div class=3D"topper">
+									=09
+				=09
+					<div class=3D"description">
+						An introduction to relational databases and their query languages
+					</div>=09
+
+						<ul class=3D"parts">
+							<li>=E2=80=A2=C2=A0Data-crunching without databases</li>
+							<li>=E2=80=A2=C2=A0Getting started with SQLite</li>
+							<li>=E2=80=A2=C2=A0SQL syntax</li>
+							<li>=E2=80=A2=C2=A0Beyond SELECT</li>
+							<li>=E2=80=A2=C2=A0Using SQLite3 with Ruby</li>
+						</ul>
+					</div><!-- end topper -->=09
+				=09
+					<div class=3D"chapter-stats-wrap">
+						<table class=3D"data chapter-stats">
+							<tbody><tr>=09
+								<td><strong>Status</strong></td>
+								<td><strong>Draft</strong></td>
+							</tr>
+							<tr>=09
+								<td>Words</td>
+								<td>4,810</td>
+							</tr>
+							<tr>
+								<td>Lines of code</td>
+								<td>257</td>
+							</tr>
+							<tr>
+								<td>Exercises</td>
+								<td>5</td>
+							</tr>
+							<tr>=09
+								<td>Pictures</td>
+								<td>16</td>
+							</tr>
+						=09
+						</tbody></table>
+						</div>
+				</li>
+
+			=09
+				<li class=3D"clearfix chapter ">
+					<h3><a href=3D"http://ruby.bastardsbook.com/chapters/external-programs=
+">Using Non-Ruby Programs With Ruby</a></h3>
+				=09
+										<div class=3D"topper">
+									=09
+				=09
+					<div class=3D"description">
+						Don't throw away the programs you've been using. Ruby can play with=
+ non-Ruby applications.
+					</div>=09
+
+						<ul class=3D"parts">
+							<li>=E2=80=A2=C2=A0Ruby, Excel, and Google Docs</li>
+							<li>=E2=80=A2=C2=A0Ruby and the Command Line</li>
+							<li>=E2=80=A2=C2=A0Ruby and Python</li>
+							<li>=E2=80=A2=C2=A0Auto-optimized-optical character recognition</li>
+						</ul>
+					</div><!-- end topper -->=09
+				=09
+					<div class=3D"chapter-stats-wrap">
+						<table class=3D"data chapter-stats">
+							<tbody><tr>=09
+								<td><strong>Status</strong></td>
+								<td><strong>Rough draft</strong></td>
+							</tr>
+							<tr>=09
+								<td>Words</td>
+								<td>3,282</td>
+							</tr>
+							<tr>
+								<td>Lines of code</td>
+								<td>194</td>
+							</tr>
+							<tr>
+								<td>Exercises</td>
+								<td>1</td>
+							</tr>
+							<tr>=09
+								<td>Pictures</td>
+								<td>21</td>
+							</tr>
+						=09
+						</tbody></table>
+						</div>
+				</li>
+
+			=09
+				<li class=3D"clearfix chapter ">
+					<h3><a href=3D"http://ruby.bastardsbook.com/chapters/image-manipulatio=
+n">Image Manipulation</a></h3>
+				=09
+										<div class=3D"topper">
+									=09
+				=09
+					<div class=3D"description">
+						How to use ImageMagick and the RMagick gem to process and interpret=
+ images and photos.
+					</div>=09
+
+						<ul class=3D"parts">
+							<li>=E2=80=A2=C2=A0ImageMagick and the RMagick gem</li>
+							<li>=E2=80=A2=C2=A0Opening and saving images</li>
+							<li>=E2=80=A2=C2=A0Image alterations</li>
+							<li>=E2=80=A2=C2=A0Pixel operations</li>
+							<li>=E2=80=A2=C2=A0Drawing</li>
+							<li>=E2=80=A2=C2=A0Applications</li>
+						</ul>
+					</div><!-- end topper -->=09
+				=09
+					<div class=3D"chapter-stats-wrap">
+						<table class=3D"data chapter-stats">
+							<tbody><tr>=09
+								<td><strong>Status</strong></td>
+								<td><strong>Stub</strong></td>
+							</tr>
+							<tr>=09
+								<td>Words</td>
+								<td>1,967</td>
+							</tr>
+							<tr>
+								<td>Lines of code</td>
+								<td>200</td>
+							</tr>
+							<tr>
+								<td>Exercises</td>
+								<td>3</td>
+							</tr>
+							<tr>=09
+								<td>Pictures</td>
+								<td>20</td>
+							</tr>
+						=09
+						</tbody></table>
+						</div>
+				</li>
+			</ul>
+	=09
+		<li class=3D"section clearfix">
+			<a name=3D"theory"></a>
+			<h2>Design and Theory </h2>
+			<div class=3D"description">
+			=09
+	<p>This section contains some of the important computer science and softwa=
+re engineering concepts that I largely skipped over in the beginning to sof=
+ten the learning curve.</p>
+	<p>This section is very incomplete and contains few working examples. I'm=
+ experimenting with different ways of introducing the topics. The main poin=
+t is to make you at least <em>aware</em> of them. The topics are deep and=
+ complex and can occupy weeks of a class curriculum. Even if this section=
+ <em>were more complete</em>, you should seek multiple sources and explanat=
+ions. </p>
+			</div>
+		=09
+		</li>
+			<ul class=3D"chapters">
+
+			=09
+				<li class=3D"clearfix chapter ">
+					<h3><a href=3D"http://ruby.bastardsbook.com/chapters/exception-handlin=
+g">Exception and Error Handling</a></h3>
+				=09
+										<div class=3D"topper">
+									=09
+				=09
+					<div class=3D"description">
+						How a program recovers from unexpected (and expected) errors
+					</div>=09
+
+						<ul class=3D"parts">
+							<li>=E2=80=A2=C2=A0Demonstrating exceptions</li>
+							<li>=E2=80=A2=C2=A0The Begin...Rescue block</li>
+							<li>=E2=80=A2=C2=A0Flow of exception handling</li>
+							<li>=E2=80=A2=C2=A0Exception and Error Classes</li>
+							<li>=E2=80=A2=C2=A0Further reading</li>
+						</ul>
+					</div><!-- end topper -->=09
+				=09
+					<div class=3D"chapter-stats-wrap">
+						<table class=3D"data chapter-stats">
+							<tbody><tr>=09
+								<td><strong>Status</strong></td>
+								<td><strong>Stub</strong></td>
+							</tr>
+							<tr>=09
+								<td>Words</td>
+								<td>1,570</td>
+							</tr>
+							<tr>
+								<td>Lines of code</td>
+								<td>172</td>
+							</tr>
+							<tr>
+								<td>Exercises</td>
+								<td>0</td>
+							</tr>
+							<tr>=09
+								<td>Pictures</td>
+								<td>5</td>
+							</tr>
+						=09
+						</tbody></table>
+						</div>
+				</li>
+
+			=09
+				<li class=3D"clearfix chapter ">
+					<h3><a href=3D"http://ruby.bastardsbook.com/chapters/oops">Object-Orie=
+nted Concepts</a></h3>
+				=09
+										<div class=3D"topper">
+									=09
+				=09
+					<div class=3D"description">
+						A primer on object-oriented design and using it to organize your code.
+					</div>=09
+
+						<ul class=3D"parts">
+							<li>=E2=80=A2=C2=A0A Cinematic Metaphor</li>
+							<li>=E2=80=A2=C2=A0Object-oriented syntax</li>
+							<li>=E2=80=A2=C2=A0Fleshing out the OOP with movies</li>
+						</ul>
+					</div><!-- end topper -->=09
+				=09
+					<div class=3D"chapter-stats-wrap">
+						<table class=3D"data chapter-stats">
+							<tbody><tr>=09
+								<td><strong>Status</strong></td>
+								<td><strong>Stub</strong></td>
+							</tr>
+							<tr>=09
+								<td>Words</td>
+								<td>1,785</td>
+							</tr>
+							<tr>
+								<td>Lines of code</td>
+								<td>190</td>
+							</tr>
+							<tr>
+								<td>Exercises</td>
+								<td>0</td>
+							</tr>
+							<tr>=09
+								<td>Pictures</td>
+								<td>4</td>
+							</tr>
+						=09
+						</tbody></table>
+						</div>
+				</li>
+
+			=09
+				<li class=3D"clearfix chapter ">
+					<h3><a href=3D"http://ruby.bastardsbook.com/chapters/recursion">Recurs=
+ion</a></h3>
+				=09
+										<div class=3D"topper">
+									=09
+				=09
+					<div class=3D"description">
+						A divide-and-conquer design pattern
+					</div>=09
+
+						<ul class=3D"parts">
+							<li>=E2=80=A2=C2=A0The King and his rocks</li>
+							<li>=E2=80=A2=C2=A0Applications (under construction)</li>
+						</ul>
+					</div><!-- end topper -->=09
+				=09
+					<div class=3D"chapter-stats-wrap">
+						<table class=3D"data chapter-stats">
+							<tbody><tr>=09
+								<td><strong>Status</strong></td>
+								<td><strong>Stub</strong></td>
+							</tr>
+							<tr>=09
+								<td>Words</td>
+								<td>1,312</td>
+							</tr>
+							<tr>
+								<td>Lines of code</td>
+								<td>41</td>
+							</tr>
+							<tr>
+								<td>Exercises</td>
+								<td>0</td>
+							</tr>
+							<tr>=09
+								<td>Pictures</td>
+								<td>0</td>
+							</tr>
+						=09
+						</tbody></table>
+						</div>
+				</li>
+			</ul>
+	=09
+		<li class=3D"section clearfix">
+			<a name=3D"projects"></a>
+			<h2>The Projects </h2>
+			<div class=3D"description">
+				<p>Even though <em>The Bastards Book of Ruby</em> was going to just be=
+ a list of programming projects and snippets, this section is the least com=
+plete and consistent. Some portions have been written before I had decided=
+ to write all the other sections, so they contain thorough step-by-step ins=
+tructions. Other portions =E2=80=93 because I assume you've gone through th=
+e previous sections, or just out of laziness =E2=80=93 do little more than=
+ describe the point of the code.</p>
+
+<p>Though many of the Fundamental and Supplementary chapters contain useful=
+ code examples, the Projects section attempts to walk through not just the=
+ code for specific situations, but the reasons behind exploring a dataset=
+ and the possible avenues of analyses and investigation.</p>
+
+<p>The code is a little more complex =E2=80=93 and, at times, obtuse =E2=80=
+=93 but is meant to be readable by not-yet accomplished programmers. Howeve=
+r, readers who <em>are</em> already skilled programmers may find useful ins=
+ights or ideas to take on.</p>
+
+<p>As of the first release of this book, I've only had time to draft just=
+ a few of the project walkthroughs that I have so far planned. This section=
+ will be the most added-upon over time.</p>
+
+			</div>
+		=09
+		</li>
+			<ul class=3D"chapters">
+
+			=09
+				<li class=3D"clearfix chapter ">
+					<h3><a href=3D"http://ruby.bastardsbook.com/chapters/csurgeries">Compa=
+ring California's Costs of Surgery</a></h3>
+				=09
+										<div class=3D"topper">
+									=09
+				=09
+					<div class=3D"description">
+						How to collect and analyze the costs of California's reported surgica=
+l procedures.
+					</div>=09
+
+						<ul class=3D"parts">
+							<li>=E2=80=A2=C2=A0The Concepts</li>
+							<li>=E2=80=A2=C2=A0The Context</li>
+							<li>=E2=80=A2=C2=A0The Steps</li>
+						</ul>
+					</div><!-- end topper -->=09
+				=09
+					<div class=3D"chapter-stats-wrap">
+						<table class=3D"data chapter-stats">
+							<tbody><tr>=09
+								<td><strong>Status</strong></td>
+								<td><strong>Decent draft</strong></td>
+							</tr>
+							<tr>=09
+								<td>Words</td>
+								<td>716</td>
+							</tr>
+							<tr>
+								<td>Lines of code</td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td>Exercises</td>
+								<td>0</td>
+							</tr>
+							<tr>=09
+								<td>Pictures</td>
+								<td>0</td>
+							</tr>
+						=09
+						</tbody></table>
+						</div>
+				</li>
+
+			=09
+				<li class=3D"clearfix chapter sub">
+					<h3><a href=3D"http://ruby.bastardsbook.com/chapters/csurgeries-mechan=
+ize">CA Surgeries: Mechanize</a></h3>
+				=09
+										<div class=3D"topper">
+									=09
+				=09
+					<div class=3D"description">
+						Use Mechanize to navigate and scrape the Common Surgeries Database
+					</div>=09
+
+						<ul class=3D"parts">
+							<li>=E2=80=A2=C2=A0Trying out the Common Surgeries website</li>
+							<li>=E2=80=A2=C2=A0Inspecting the Common Surgeries website</li>
+							<li>=E2=80=A2=C2=A0The Code</li>
+							<li>=E2=80=A2=C2=A0The Fetching Code: All Together</li>
+						</ul>
+					</div><!-- end topper -->=09
+				=09
+					<div class=3D"chapter-stats-wrap">
+						<table class=3D"data chapter-stats">
+							<tbody><tr>=09
+								<td><strong>Status</strong></td>
+								<td><strong>Decent draft</strong></td>
+							</tr>
+							<tr>=09
+								<td>Words</td>
+								<td>2,367</td>
+							</tr>
+							<tr>
+								<td>Lines of code</td>
+								<td>251</td>
+							</tr>
+							<tr>
+								<td>Exercises</td>
+								<td>0</td>
+							</tr>
+							<tr>=09
+								<td>Pictures</td>
+								<td>7</td>
+							</tr>
+						=09
+						</tbody></table>
+						</div>
+				</li>
+
+			=09
+				<li class=3D"clearfix chapter sub">
+					<h3><a href=3D"http://ruby.bastardsbook.com/chapters/csurgeries-databa=
+se">CA Surgeries: Parsing and Storing</a></h3>
+				=09
+										<div class=3D"topper">
+									=09
+				=09
+					<div class=3D"description">
+						Using Nokogiri to parse the collected HTML pages and storing into a=
+ SQLite database
+					</div>=09
+
+						<ul class=3D"parts">
+							<li>=E2=80=A2=C2=A0The Steps</li>
+							<li>=E2=80=A2=C2=A0Parsing with Nokogiri</li>
+							<li>=E2=80=A2=C2=A0Storing the Data with SQLite</li>
+							<li>=E2=80=A2=C2=A0Code Comparison: SQL vs. Ruby</li>
+						</ul>
+					</div><!-- end topper -->=09
+				=09
+					<div class=3D"chapter-stats-wrap">
+						<table class=3D"data chapter-stats">
+							<tbody><tr>=09
+								<td><strong>Status</strong></td>
+								<td><strong>Decent draft</strong></td>
+							</tr>
+							<tr>=09
+								<td>Words</td>
+								<td>1,173</td>
+							</tr>
+							<tr>
+								<td>Lines of code</td>
+								<td>157</td>
+							</tr>
+							<tr>
+								<td>Exercises</td>
+								<td>0</td>
+							</tr>
+							<tr>=09
+								<td>Pictures</td>
+								<td>2</td>
+							</tr>
+						=09
+						</tbody></table>
+						</div>
+				</li>
+
+			=09
+				<li class=3D"clearfix chapter sub">
+					<h3><a href=3D"http://ruby.bastardsbook.com/chapters/csurgeries-visual=
+ization">CA Surgeries: Visualization</a></h3>
+				=09
+										<div class=3D"topper">
+									=09
+				=09
+					<div class=3D"description">
+						Using Google Charts to visualize the costs of surgery in California
+					</div>=09
+
+						<ul class=3D"parts">
+							<li>=E2=80=A2=C2=A0Hacking Visualizations</li>
+							<li>=E2=80=A2=C2=A0Intro to the Google Charts API</li>
+							<li>=E2=80=A2=C2=A0Queries and graphing</li>
+							<li>=E2=80=A2=C2=A0Why coding makes data easier</li>
+						</ul>
+					</div><!-- end topper -->=09
+				=09
+					<div class=3D"chapter-stats-wrap">
+						<table class=3D"data chapter-stats">
+							<tbody><tr>=09
+								<td><strong>Status</strong></td>
+								<td><strong>Draft</strong></td>
+							</tr>
+							<tr>=09
+								<td>Words</td>
+								<td>2,284</td>
+							</tr>
+							<tr>
+								<td>Lines of code</td>
+								<td>148</td>
+							</tr>
+							<tr>
+								<td>Exercises</td>
+								<td>0</td>
+							</tr>
+							<tr>=09
+								<td>Pictures</td>
+								<td>17</td>
+							</tr>
+						=09
+						</tbody></table>
+						</div>
+				</li>
+
+			=09
+				<li class=3D"clearfix chapter ">
+					<h3><a href=3D"http://ruby.bastardsbook.com/chapters/jail-logs-pcso">C=
+ounting the Jail Logs</a></h3>
+				=09
+										<div class=3D"topper">
+									=09
+				=09
+					<div class=3D"description">
+						Who is in jail? And why?
+					</div>=09
+
+						<ul class=3D"parts">
+							<li>=E2=80=A2=C2=A0Scraping with Mechanize</li>
+							<li>=E2=80=A2=C2=A0Parsing the data</li>
+							<li>=E2=80=A2=C2=A0Data normalization</li>
+							<li>=E2=80=A2=C2=A0Sample analyses and visualizations</li>
+							<li>=E2=80=A2=C2=A0Limitations of the data</li>
+						</ul>
+					</div><!-- end topper -->=09
+				=09
+					<div class=3D"chapter-stats-wrap">
+						<table class=3D"data chapter-stats">
+							<tbody><tr>=09
+								<td><strong>Status</strong></td>
+								<td><strong>Draft</strong></td>
+							</tr>
+							<tr>=09
+								<td>Words</td>
+								<td>3,344</td>
+							</tr>
+							<tr>
+								<td>Lines of code</td>
+								<td>331</td>
+							</tr>
+							<tr>
+								<td>Exercises</td>
+								<td>0</td>
+							</tr>
+							<tr>=09
+								<td>Pictures</td>
+								<td>30</td>
+							</tr>
+						=09
+						</tbody></table>
+						</div>
+				</li>
+
+			=09
+				<li class=3D"clearfix chapter ">
+					<h3><a href=3D"http://ruby.bastardsbook.com/chapters/sp500-code">Gathe=
+ring the Standard &amp; Poor's 500 Stock Listings</a></h3>
+				=09
+										<div class=3D"topper">
+									=09
+				=09
+					<div class=3D"description">
+						A financially-themed demo of HTML parsing, SQL, and visualization
+					</div>=09
+
+						<ul class=3D"parts">
+							<li>=E2=80=A2=C2=A0Getting historical stock data from Yahoo</li>
+							<li>=E2=80=A2=C2=A0Storing stock data into SQLite</li>
+							<li>=E2=80=A2=C2=A0Visualization with Google Charts</li>
+						</ul>
+					</div><!-- end topper -->=09
+				=09
+					<div class=3D"chapter-stats-wrap">
+						<table class=3D"data chapter-stats">
+							<tbody><tr>=09
+								<td><strong>Status</strong></td>
+								<td><strong>Draft</strong></td>
+							</tr>
+							<tr>=09
+								<td>Words</td>
+								<td>105</td>
+							</tr>
+							<tr>
+								<td>Lines of code</td>
+								<td>45</td>
+							</tr>
+							<tr>
+								<td>Exercises</td>
+								<td>0</td>
+							</tr>
+							<tr>=09
+								<td>Pictures</td>
+								<td>1</td>
+							</tr>
+						=09
+						</tbody></table>
+						</div>
+				</li>
+			</ul>
+	</ul>
+
+</section>
+</article>
+
+
+			</div> <!-- end content -->
+		=09
+		</div> <!-- div class=3D"row" -->
+	</div>	<!-- div class=3D"site container" -->
+
+=09
+
+<footer class=3D"site">
+	<div class=3D"container clearfix">
+		<div class=3D"row">
+			<div class=3D"sixcol">
+				<a name=3D"contact"></a>
+				<h6>The Book</h6>
+			=09
+				<p><strong>Version:</strong> 0.1
+					</p>
+					<ul>
+	<li><a href=3D"http://ruby.bastardsbook.com/">Home</a></li>
+	<li><a href=3D"http://ruby.bastardsbook.com/about">About</a></li>
+	<li><a href=3D"http://ruby.bastardsbook.com/toc">Contents</a></li>
+	<li><a href=3D"http://ruby.bastardsbook.com/resources">Resources</a></li>
+	<li><a href=3D"http://blog.bastardsbook.com/">Blog</a></li>
+=09
+</ul>
+			=09
+					<ul>
+						<li>Twitter:  <a href=3D"http://twitter.com/bastardsbook">@bastardsbo=
+ok</a></li>
+						<li><a href=3D"http://www.facebook.com/pages/The-Bastards-Book/173374=
+762734210">Facebook</a></li>						=09
+					</ul>
+				</div>
+			<div class=3D"sixcol last">
+				<h6>Author Info</h6>
+				<p>Dan Nguyen is a journalist in New York</p>
+				<ul>
+					<li>Email: <a href=3D"mailto:dan@danwin.com">dan@danwin.com</a></li>
+					<li>Blog: <a href=3D"http://danwin.com/" title=3D"Dan Nguyen pronounce=
+d fast is danwin | The 'g' is mostly silent">danwin.com</a></li>
+					<li>Twitter: <a href=3D"http://twitter.com/dancow">@dancow</a></li>
+					<li>Tumblr: <a href=3D"http://tumblr.eyeheartnewyork.com/">eyeheartnew=
+york</a></li>
+					<li><a href=3D"http://www.flickr.com/photos/zokuga/" title=3D"Flickr:=
+ Dan Nguyen @ New York City's Photostream">Flickr</a></li>
+
+				</ul>
+			</div>
+	=09
+		</div>
+
+
+	</div>
+=09
+	<div class=3D"row"><div id=3D"copyright">Copyright 2011	</div></div>
+
+</footer>
+<script type=3D"text/javascript"><!--
+/* Script removed by snapshot save */
+--></script>
+
+
+
+
+
+</body></html>
+------=_NextPart_000_0000_748E5741.87378862
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-0BD211A4:http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic
+
+/* Effective stylesheet produced by snapshot save */
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("PT Sans"), local("PTSans-Regular"), url("urn:download-error:h=
+ttp://fonts.gstatic.com/s/ptsans/v8/LKf8nhXsWg5ybwEGXk8UBQ.woff") format("w=
+off");
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("PT Sans Bold"), local("PTSans-Bold"), url("urn:download-error=
+:http://fonts.gstatic.com/s/ptsans/v8/0XxGQsSc1g4rdRdjJKZrNBsxEYwM7FgeyaSgU=
+71cLG0.woff") format("woff");
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: local("PT Sans Italic"), local("PTSans-Italic"), url("urn:download-e=
+rror:http://fonts.gstatic.com/s/ptsans/v8/PIPMHY90P7jtyjpXuZ2cLD8E0i7KZn-EP=
+nyo3HZu7kw.woff") format("woff");
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: local("PT Sans Bold Italic"), local("PTSans-BoldItalic"), url("urn:n=
+ot-loaded:http://fonts.gstatic.com/s/ptsans/v8/lILlYDvubYemzYzN7GbLkHhCUOGz=
+7vYGh680lGh-uXM.woff") format("woff");
+}
+
+------=_NextPart_000_0000_748E5741.87378862
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-075678C8:http://ruby.bastardsbook.com/assets/screen.css
+
+/* Effective stylesheet produced by snapshot save */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquot=
+e, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, sm=
+all, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form,=
+ label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article,=
+ aside, canvas, details, figcaption, figure, footer, header, hgroup, menu,=
+ nav, section, summary, time, mark, audio, video { margin: 0px; padding: 0p=
+x; border: 0px none; font: inherit; vertical-align: baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu,=
+ nav, section { display: block; }
+table { border-collapse: collapse; border-spacing: 0px; }
+body { font: 13px/1.231 sans-serif; }
+html { overflow-y: scroll; }
+a:hover, a:active { outline: medium none; }
+ul, ol { margin-left: 2em; }
+nav ul, nav li { margin: 0px; list-style: none outside none; }
+strong, th { font-weight: bold; }
+td { vertical-align: top; }
+*::-moz-selection { background: none repeat scroll 0% 0% rgb(255, 172, 0);=
+ color: rgb(255, 255, 255); text-shadow: none; }
+a:link {  }
+body, select, input, textarea { color: rgb(187, 187, 187); background: none=
+ repeat scroll 0% 0% rgb(17, 17, 17); }
+h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+a, a:active, a:visited { color: rgb(96, 120, 144); }
+a:hover { color: rgb(0, 51, 102); }
+body { font-family: Helvetica,"Helvetica Neue",Arial,sans-serif; }
+h2, h3 { margin-bottom: 5px; }
+h2 { font-weight: bold; letter-spacing: 1px; }
+.clearfix:before, .clearfix:after { content: " "; display: block; height:=
+ 0px; overflow: hidden; }
+.clearfix:after { clear: both; }
+.clearfix {  }
+@media print {
+  * { background: none repeat scroll 0% 0% transparent ! important; color:=
+ black ! important; text-shadow: none ! important; filter: none ! important=
+; }
+  a, a:visited { color: rgb(68, 68, 68) ! important; text-decoration: under=
+line; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  .ir a:after, a[href^=3D"javascript:"]:after, a[href^=3D"#"]:after { conte=
+nt: ""; }
+  tr, img { page-break-inside: avoid; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
+div#alert { width: 100%; }
+article section, div.content.books section, div.content.sections section,=
+ header div.row, footer div.row, hgroup.article, div.row { width: 100%; max=
+-width: 900px; margin-left: auto; margin-right: auto; }
+div.row { padding-left: 10px; padding-right: 10px; }
+@media only screen and (max-width: 1023px) {
+  body { font-size: 0.8em; line-height: 1.5em; }
+}
+@media handheld, only screen and (max-width: 767px) {
+  body { font-size: 16px; }
+  .row, body, .container { width: 100%; min-width: 0px; margin-left: 0px;=
+ margin-right: 0px; padding-left: 0px; padding-right: 0px; }
+  .row .onecol, .row .twocol, .row .threecol, .row .fourcol, .row .fivecol,=
+ .row .sixcol, .row .sevencol, .row .eightcol, .row .ninecol, .row .tencol,=
+ .row .elevencol, .row .twelvecol { width: auto; float: none; margin-left:=
+ 0px; margin-right: 0px; padding-left: 20px; padding-right: 20px; }
+}
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eight=
+col, .ninecol, .tencol, .elevencol { margin-right: 3.8%; float: left; min-h=
+eight: 1px; }
+.row .sixcol { width: 48%; }
+.last { margin-right: 0px; }
+@media only screen and (max-width: 1023px) {
+  body { font-size: 0.8em; line-height: 1.5em; }
+}
+@media handheld, only screen and (max-width: 767px) {
+  body { font-size: 16px; }
+  .row, body, .container { width: 100%; min-width: 0px; margin-left: 0px;=
+ margin-right: 0px; padding-left: 0px; padding-right: 0px; }
+  .row .onecol, .row .twocol, .row .threecol, .row .fourcol, .row .fivecol,=
+ .row .sixcol, .row .sevencol, .row .eightcol, .row .ninecol, .row .tencol,=
+ .row .elevencol, .row .twelvecol { width: auto; float: none; margin-left:=
+ 0px; margin-right: 0px; padding-left: 20px; padding-right: 20px; }
+}
+body { color: rgb(34, 34, 34); background-color: rgb(234, 234, 234); font:=
+ 1.1em/1.5em "PT Sans",Georgia,"Times New Roman",serif; margin: 0px; }
+div#alert { color: rgb(221, 221, 221); font-size: 12px; font-family: "PT Sa=
+ns","Helvetica Neue","Helvetica",Arial,sans-serif; text-align: center; padd=
+ing: 4px; word-spacing: 1px; background-color: rgb(0, 0, 0); }
+a:link, a:visited { color: rgb(0, 102, 204); text-decoration: none; }
+a:hover { text-decoration: underline; }
+article { margin: 0px auto; }
+div#copyright { text-align: left; font-size: 0.9em; }
+em { font-style: italic; }
+footer.site, header.site { width: 100%; }
+footer.site { border-top: thin solid rgb(170, 170, 170); background-color:=
+ rgb(34, 0, 0); font-family: "PT Sans","Helvetica Neue","Helvetica",Arial,s=
+ans-serif; color: rgb(221, 221, 221); font-size: 16px; letter-spacing: 0.5p=
+x; margin-top: 2em; padding-top: 2em; padding-bottom: 1em; }
+footer.site h6 { font-weight: normal; }
+footer.site h4, footer.site h6 { color: rgb(255, 255, 255); line-height: 1e=
+m; margin-bottom: 3px; margin-top: 0px; }
+footer.site ul { margin-left: 0px; }
+footer.site ul li { list-style: none outside none; margin-bottom: 0.1em; }
+footer.site p { color: rgb(255, 255, 255); }
+footer.site a, footer.site a:link, footer.site a:visited { color: rgb(149,=
+ 201, 255); text-decoration: none; }
+footer.site a:hover { text-decoration: underline; }
+footer.site p { font-size: 15px; }
+header.site { padding-top: 1em; margin-top: 1em; margin-bottom: 1.5em; }
+header.site .title, header.site .title a, header.site .title a:link, header=
+.site .title a:visited { font-family: "Gill Sans","PT Sans","Helvetica Neue=
+","Helvetica",Arial,sans-serif; color: rgb(0, 0, 0); font-size: 42px; line-=
+height: 50px; margin-bottom: 0.1em; }
+header.site { border-bottom: thin solid rgb(136, 136, 136); }
+h1, h2, h3, h4, h5, h6 { font-weight: 400; }
+h2, h3, h4, h5, h6 { color: rgb(41, 42, 48); }
+h6 { font-size: 1.12em; line-height: 1.28571em; margin-bottom: 0.7em; margi=
+n-top: 3em; font-weight: bold; font-family: "PT Sans","Helvetica Neue",Helv=
+etica,Arial,sans-serif; }
+h6:first-child { margin-top: 0.5em; }
+h3 { font-size: 1.7em; line-height: 0.75em; margin-bottom: 1em; margin-top:=
+ 0.35em; }
+h2 { border-bottom: 1px solid rgb(221, 170, 170); padding-bottom: 0.5em; co=
+lor: rgb(140, 18, 47); }
+h2 { font-size: 2.1em; line-height: 1.1em; margin-bottom: 1em; margin-top:=
+ 0.1em; }
+h1 { font-size: 2.5em; line-height: 1.1em; margin-bottom: 0.3em; }
+nav.site { color: rgb(17, 17, 17); font-family: "PT Sans","Helvetica Neue",=
+"Helvetica",Arial,sans-serif; font-size: 14px; padding: 14px; }
+nav.site.top { margin-top: 10px; margin-bottom: 1em; padding: 0px; }
+nav.site.top ul { margin-bottom: 0px; }
+nav.site.top ul li { display: inline; font-size: 15px; list-style: none out=
+side none; margin-right: 30px; margin-bottom: 0px; padding: 3px 10px 0px 3p=
+x; }
+p { line-height: 1.6em; margin-bottom: 1.5em; }
+p:last-child { margin-bottom: 0.5em; }
+section { margin-bottom: 5em; padding-bottom: 1.2em; clear: both; }
+section#overview { color: rgb(0, 0, 0); margin-bottom: 3em; }
+table.data, table.os { margin: 1em 0px 1.5em 1%; width: 98%; border-collaps=
+e: collapse; }
+table.data td { border: thin solid rgb(170, 170, 170); font-size: 15px; }
+table.data th, table.data td, table.os td, table.os th { font-family: "PT=
+ Sans","Helvetica Neue",Helvetica,Arial,sans-serif; padding: 5px; text-alig=
+n: left; }
+ul, ol { margin-bottom: 1.5em; }
+ul li, ol li { margin-bottom: 0.5em; }
+dl p, ul li p, ol li p { margin-bottom: 0.4em; }
+div.toc a, div.toc a:link, div.toc a:visited { text-decoration: none; }
+div.toc ul#top-list { padding-left: 0px; margin-left: 0px; }
+div.toc ul#top-list li { display: inline; margin-left: 0px; margin-right:=
+ 1.5em; }
+div.toc h2 { border: 0px none; line-height: 2.5em; margin: 0px 0px 0.1em;=
+ padding: 0px; }
+div.toc ul li { list-style: none outside none; clear: both; }
+div.toc ul.sections, div.toc ul.chapters { margin: 0px; }
+div.toc ul.sections li.section { margin-bottom: 4em; }
+div.toc ul.sections > li h2 { font-size: 2.2em; line-height: 2.5em; margin-=
+bottom: 0.1em; }
+div.toc ul.chapters > li h3 { font-size: 1.5em; line-height: 1.5em; margin-=
+bottom: 0.05em; margin-top: 0px; }
+div.toc ul.chapters li.chapter:first-child { margin-top: 3em; }
+div.toc ul.chapters li.chapter { margin-bottom: 3em; }
+div.toc ul.chapters li.chapter.sub h3 { font-size: 1.4em; line-height: 1.5e=
+m; }
+div.toc ul.chapters li.chapter.sub { padding-left: 5em; }
+div.toc li.chapter div.topper { float: left; width: 69%; }
+div.toc li.chapter div.description { font-size: 1.15em; }
+div.toc ul.parts { margin: 0px; }
+div.toc ul.parts li { color: rgb(85, 85, 85); display: inline; font-size:=
+ 0.9em; margin-right: 0.4em; }
+div.toc ul.parts, div.toc table.chapter-stats { margin: 0px; }
+div.chapter-stats-wrap { background: none repeat scroll 0% 0% rgb(221, 221,=
+ 221); float: right; margin-right: 2%; padding: 1%; width: 24%; }
+table.chapter-stats { table-layout: fixed; }
+table.chapter-stats td { border: 0px none; color: rgb(153, 85, 85); line-he=
+ight: 1.1em; font-size: 0.8em; padding: 0px; text-align: left; width: 42%; }
+table.chapter-stats td + td { color: black; font-weight: 400; text-align:=
+ right; width: 57%; }
+
+------=_NextPart_000_0000_748E5741.87378862
+Content-Type: text/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-82BED2B9:http://www.google-analytics.com/ga.js
+
+/* Script removed by snapshot save */
+
+------=_NextPart_000_0000_748E5741.87378862
+Content-Type: text/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-2EF5B587:http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js
+
+/* Script removed by snapshot save */
+
+------=_NextPart_000_0000_748E5741.87378862
+Content-Type: text/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-1D29D138:http://ruby.bastardsbook.com/assets/all.js
+
+/* Script removed by snapshot save */
+
+------=_NextPart_000_0000_748E5741.87378862--

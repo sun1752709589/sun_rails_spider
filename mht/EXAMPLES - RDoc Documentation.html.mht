@@ -1,0 +1,678 @@
+From: <Saved by Mozilla 5.0 (X11)>
+Subject: EXAMPLES - RDoc Documentation
+Date: Sun, 28 Jun 2015 08:52:10 +0800
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_0000_6FB0EAA5.CA8C986D"
+X-MAF-Information: Produced By MAF V3.1.0.1-signed
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_6FB0EAA5.CA8C986D
+Content-Type: text/html;
+	charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://docs.seattlerb.org/mechanize/EXAMPLES_rdoc.html
+
+<!DOCTYPE html><html><head>
+<meta http-equiv=3D"content-type" content=3D"text/html; charset=3DUTF-8">
+<meta charset=3D"UTF-8">
+
+<title>EXAMPLES - RDoc Documentation</title>
+
+<script type=3D"text/javascript"><!--
+/* Script removed by snapshot save */
+--></script>
+
+<script src=3D"urn:snapshot-6146E572:http://docs.seattlerb.org/mechanize/js=
+/jquery.js"></script>
+<script src=3D"urn:snapshot-2B1AB266:http://docs.seattlerb.org/mechanize/js=
+/darkfish.js"></script>
+
+<link href=3D"urn:snapshot-A90AD518:http://docs.seattlerb.org/mechanize/css=
+/fonts.css" rel=3D"stylesheet">
+<link href=3D"urn:snapshot-20471F56:http://docs.seattlerb.org/mechanize/css=
+/rdoc.css" rel=3D"stylesheet">
+
+
+
+</head><body id=3D"top" role=3D"document" class=3D"file">
+<nav role=3D"navigation">
+  <div id=3D"project-navigation">
+    <div id=3D"home-section" role=3D"region" title=3D"Quick navigation" cla=
+ss=3D"nav-section">
+  <h2>
+    <a href=3D"http://docs.seattlerb.org/mechanize/index.html" rel=3D"home"=
+>Home</a>
+  </h2>
+
+  <div id=3D"table-of-contents-navigation">
+    <a href=3D"http://docs.seattlerb.org/mechanize/table_of_contents.html#p=
+ages">Pages</a>
+    <a href=3D"http://docs.seattlerb.org/mechanize/table_of_contents.html#c=
+lasses">Classes</a>
+    <a href=3D"http://docs.seattlerb.org/mechanize/table_of_contents.html#m=
+ethods">Methods</a>
+  </div>
+</div>
+
+    <div style=3D"display: block;" id=3D"search-section" role=3D"search" cl=
+ass=3D"project-section initially-hidden">
+  <form action=3D"#" method=3D"get" accept-charset=3D"utf-8">
+    <div id=3D"search-field-wrapper">
+      <input id=3D"search-field" role=3D"combobox" aria-label=3D"Search" ar=
+ia-autocomplete=3D"list" aria-controls=3D"search-results" name=3D"search"=
+ placeholder=3D"Search" spellcheck=3D"false" title=3D"Type to search, Up an=
+d Down to navigate, Enter to load" type=3D"text">
+    </div>
+
+    <ul style=3D"display: block;" id=3D"search-results" aria-label=3D"Searc=
+h Results" aria-busy=3D"false" aria-expanded=3D"false" aria-atomic=3D"false=
+" class=3D"initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+ =20
+<div class=3D"nav-section">
+  <h3>Table of Contents</h3>
+
+  <ul class=3D"link-list" role=3D"directory">
+    <li><a href=3D"#label-Mechanize+examples">Mechanize examples</a>
+    </li><li><a href=3D"#label-Google">Google</a>
+    </li><li><a href=3D"#label-Rubyforge">Rubyforge</a>
+    </li><li><a href=3D"#label-File+Upload">File Upload</a>
+    </li><li><a href=3D"#label-Pluggable+Parsers">Pluggable Parsers</a>
+    </li><li><a href=3D"#label-Using+a+proxy">Using a proxy</a>
+    </li><li><a href=3D"#label-The+transact+method">The transact method</a>
+    </li><li><a href=3D"#label-Client+Certificate+Authentication+-28Mutual+=
+Auth-29">Client Certificate Authentication (Mutual Auth)</a>
+  </li></ul>
+</div>
+
+
+  <div id=3D"project-metadata">
+    <div id=3D"fileindex-section" class=3D"nav-section">
+  <h3>Pages</h3>
+
+  <ul class=3D"link-list">
+ =20
+    <li><a href=3D"http://docs.seattlerb.org/mechanize/CHANGELOG_rdoc.html"=
+>CHANGELOG</a>
+ =20
+    </li><li><a href=3D"#">EXAMPLES</a>
+ =20
+    </li><li><a href=3D"http://docs.seattlerb.org/mechanize/GUIDE_rdoc.html=
+">GUIDE</a>
+ =20
+    </li><li><a href=3D"http://docs.seattlerb.org/mechanize/LICENSE_rdoc.ht=
+ml">LICENSE</a>
+ =20
+    </li><li><a href=3D"http://docs.seattlerb.org/mechanize/Manifest_txt.ht=
+ml">Manifest</a>
+ =20
+    </li><li><a href=3D"http://docs.seattlerb.org/mechanize/README_rdoc.htm=
+l">README</a>
+ =20
+  </li></ul>
+</div>
+
+  </div>
+</nav>
+
+<main role=3D"main" aria-label=3D"Page EXAMPLES.rdoc">
+
+<h1 id=3D"label-Mechanize+examples"><a href=3D"http://docs.seattlerb.org/me=
+chanize/Mechanize.html">Mechanize</a> examples<span><a href=3D"#label-Mecha=
+nize+examples">=C2=B6</a> <a href=3D"#top">=E2=86=91</a></span></h1>
+
+<p>Note: Several examples show methods chained to the end of do/end blocks.
+<code>do...end</code> is the same as curly braces (<code>{...}</code>).=20
+For example, <code>do ... end.submit</code> is the same as <code>{ ...
+}.submit</code>.</p>
+
+<h2 id=3D"label-Google">Google<span><a href=3D"#label-Google">=C2=B6</a> <a=
+ href=3D"#top">=E2=86=91</a></span></h2>
+
+<pre class=3D"ruby"><span class=3D"ruby-identifier">require</span> <span cl=
+ass=3D"ruby-string">'rubygems'</span>
+<span class=3D"ruby-identifier">require</span> <span class=3D"ruby-string">=
+'mechanize'</span>
+
+<span class=3D"ruby-identifier">a</span> =3D <span class=3D"ruby-constant">=
+Mechanize</span>.<span class=3D"ruby-identifier">new</span> { <span class=
+=3D"ruby-operator">|</span><span class=3D"ruby-identifier">agent</span><spa=
+n class=3D"ruby-operator">|</span>
+  <span class=3D"ruby-identifier">agent</span>.<span class=3D"ruby-identifi=
+er">user_agent_alias</span> =3D <span class=3D"ruby-string">'Mac Safari'</s=
+pan>
+}
+
+<span class=3D"ruby-identifier">a</span>.<span class=3D"ruby-identifier">ge=
+t</span>(<span class=3D"ruby-string">'http://google.com/'</span>) <span cla=
+ss=3D"ruby-keyword">do</span> <span class=3D"ruby-operator">|</span><span=
+ class=3D"ruby-identifier">page</span><span class=3D"ruby-operator">|</span>
+  <span class=3D"ruby-identifier">search_result</span> =3D <span class=3D"r=
+uby-identifier">page</span>.<span class=3D"ruby-identifier">form_with</span=
+>(:<span class=3D"ruby-identifier">id</span> =3D<span class=3D"ruby-operato=
+r">&gt;</span> <span class=3D"ruby-string">'gbqf'</span>) <span class=3D"ru=
+by-keyword">do</span> <span class=3D"ruby-operator">|</span><span class=3D"=
+ruby-identifier">search</span><span class=3D"ruby-operator">|</span>
+    <span class=3D"ruby-identifier">search</span>.<span class=3D"ruby-ident=
+ifier">q</span> =3D <span class=3D"ruby-string">'Hello world'</span>
+  <span class=3D"ruby-keyword">end</span>.<span class=3D"ruby-identifier">s=
+ubmit</span>
+
+  <span class=3D"ruby-identifier">search_result</span>.<span class=3D"ruby-=
+identifier">links</span>.<span class=3D"ruby-identifier">each</span> <span=
+ class=3D"ruby-keyword">do</span> <span class=3D"ruby-operator">|</span><sp=
+an class=3D"ruby-identifier">link</span><span class=3D"ruby-operator">|</sp=
+an>
+    <span class=3D"ruby-identifier">puts</span> <span class=3D"ruby-identif=
+ier">link</span>.<span class=3D"ruby-identifier">text</span>
+  <span class=3D"ruby-keyword">end</span>
+<span class=3D"ruby-keyword">end</span>
+</pre>
+
+<h2 id=3D"label-Rubyforge">Rubyforge<span><a href=3D"#label-Rubyforge">=C2=
+=B6</a> <a href=3D"#top">=E2=86=91</a></span></h2>
+
+<pre class=3D"ruby"><span class=3D"ruby-identifier">require</span> <span cl=
+ass=3D"ruby-string">'rubygems'</span>
+<span class=3D"ruby-identifier">require</span> <span class=3D"ruby-string">=
+'mechanize'</span>
+
+<span class=3D"ruby-identifier">a</span> =3D <span class=3D"ruby-constant">=
+Mechanize</span>.<span class=3D"ruby-identifier">new</span>
+<span class=3D"ruby-identifier">a</span>.<span class=3D"ruby-identifier">ge=
+t</span>(<span class=3D"ruby-string">'http://rubyforge.org/'</span>) <span=
+ class=3D"ruby-keyword">do</span> <span class=3D"ruby-operator">|</span><sp=
+an class=3D"ruby-identifier">page</span><span class=3D"ruby-operator">|</sp=
+an>
+  <span class=3D"ruby-comment"># Click the login link</span>
+  <span class=3D"ruby-identifier">login_page</span> =3D <span class=3D"ruby=
+-identifier">a</span>.<span class=3D"ruby-identifier">click</span>(<span cl=
+ass=3D"ruby-identifier">page</span>.<span class=3D"ruby-identifier">link_wi=
+th</span>(:<span class=3D"ruby-identifier">text</span> =3D<span class=3D"ru=
+by-operator">&gt;</span> <span class=3D"ruby-regexp">/Log In/</span>))
+
+  <span class=3D"ruby-comment"># Submit the login form</span>
+  <span class=3D"ruby-identifier">my_page</span> =3D <span class=3D"ruby-id=
+entifier">login_page</span>.<span class=3D"ruby-identifier">form_with</span=
+>(:<span class=3D"ruby-identifier">action</span> =3D<span class=3D"ruby-ope=
+rator">&gt;</span> <span class=3D"ruby-string">'/account/login.php'</span>)=
+ <span class=3D"ruby-keyword">do</span> <span class=3D"ruby-operator">|</sp=
+an><span class=3D"ruby-identifier">f</span><span class=3D"ruby-operator">|<=
+/span>
+    <span class=3D"ruby-identifier">f</span>.<span class=3D"ruby-identifier=
+">form_loginname</span>  =3D <span class=3D"ruby-constant">ARGV</span>[<spa=
+n class=3D"ruby-value">0</span>]
+    <span class=3D"ruby-identifier">f</span>.<span class=3D"ruby-identifier=
+">form_pw</span>         =3D <span class=3D"ruby-constant">ARGV</span>[<spa=
+n class=3D"ruby-value">1</span>]
+  <span class=3D"ruby-keyword">end</span>.<span class=3D"ruby-identifier">c=
+lick_button</span>
+
+  <span class=3D"ruby-identifier">my_page</span>.<span class=3D"ruby-identi=
+fier">links</span>.<span class=3D"ruby-identifier">each</span> <span class=
+=3D"ruby-keyword">do</span> <span class=3D"ruby-operator">|</span><span cla=
+ss=3D"ruby-identifier">link</span><span class=3D"ruby-operator">|</span>
+    <span class=3D"ruby-identifier">text</span> =3D <span class=3D"ruby-ide=
+ntifier">link</span>.<span class=3D"ruby-identifier">text</span>.<span clas=
+s=3D"ruby-identifier">strip</span>
+    <span class=3D"ruby-keyword">next</span> <span class=3D"ruby-keyword">u=
+nless</span> <span class=3D"ruby-identifier">text</span>.<span class=3D"rub=
+y-identifier">length</span> <span class=3D"ruby-operator">&gt;</span> <span=
+ class=3D"ruby-value">0</span>
+    <span class=3D"ruby-identifier">puts</span> <span class=3D"ruby-identif=
+ier">text</span>
+  <span class=3D"ruby-keyword">end</span>
+<span class=3D"ruby-keyword">end</span>
+</pre>
+
+<h2 id=3D"label-File+Upload">File Upload<span><a href=3D"#label-File+Upload=
+">=C2=B6</a> <a href=3D"#top">=E2=86=91</a></span></h2>
+
+<p>Upload a file to flickr.</p>
+
+<pre class=3D"ruby"><span class=3D"ruby-identifier">require</span> <span cl=
+ass=3D"ruby-string">'rubygems'</span>
+<span class=3D"ruby-identifier">require</span> <span class=3D"ruby-string">=
+'mechanize'</span>
+
+<span class=3D"ruby-identifier">abort</span> <span class=3D"ruby-node">"#{$=
+0} login passwd filename"</span> <span class=3D"ruby-keyword">if</span> (<s=
+pan class=3D"ruby-constant">ARGV</span>.<span class=3D"ruby-identifier">siz=
+e</span> <span class=3D"ruby-operator">!=3D</span> <span class=3D"ruby-valu=
+e">3</span>)
+
+<span class=3D"ruby-identifier">a</span> =3D <span class=3D"ruby-constant">=
+Mechanize</span>.<span class=3D"ruby-identifier">new</span> { <span class=
+=3D"ruby-operator">|</span><span class=3D"ruby-identifier">agent</span><spa=
+n class=3D"ruby-operator">|</span>
+  <span class=3D"ruby-comment"># Flickr refreshes after login</span>
+  <span class=3D"ruby-identifier">agent</span>.<span class=3D"ruby-identifi=
+er">follow_meta_refresh</span> =3D <span class=3D"ruby-keyword">true</span>
+}
+
+<span class=3D"ruby-identifier">a</span>.<span class=3D"ruby-identifier">ge=
+t</span>(<span class=3D"ruby-string">'http://flickr.com/'</span>) <span cla=
+ss=3D"ruby-keyword">do</span> <span class=3D"ruby-operator">|</span><span=
+ class=3D"ruby-identifier">home_page</span><span class=3D"ruby-operator">|<=
+/span>
+  <span class=3D"ruby-identifier">signin_page</span> =3D <span class=3D"rub=
+y-identifier">a</span>.<span class=3D"ruby-identifier">click</span>(<span=
+ class=3D"ruby-identifier">home_page</span>.<span class=3D"ruby-identifier"=
+>link_with</span>(:<span class=3D"ruby-identifier">text</span> =3D<span cla=
+ss=3D"ruby-operator">&gt;</span> <span class=3D"ruby-regexp">/Sign In/</spa=
+n>))
+
+  <span class=3D"ruby-identifier">my_page</span> =3D <span class=3D"ruby-id=
+entifier">signin_page</span>.<span class=3D"ruby-identifier">form_with</spa=
+n>(:<span class=3D"ruby-identifier">name</span> =3D<span class=3D"ruby-oper=
+ator">&gt;</span> <span class=3D"ruby-string">'login_form'</span>) <span cl=
+ass=3D"ruby-keyword">do</span> <span class=3D"ruby-operator">|</span><span=
+ class=3D"ruby-identifier">form</span><span class=3D"ruby-operator">|</span>
+    <span class=3D"ruby-identifier">form</span>.<span class=3D"ruby-identif=
+ier">login</span>  =3D <span class=3D"ruby-constant">ARGV</span>[<span clas=
+s=3D"ruby-value">0</span>]
+    <span class=3D"ruby-identifier">form</span>.<span class=3D"ruby-identif=
+ier">passwd</span> =3D <span class=3D"ruby-constant">ARGV</span>[<span clas=
+s=3D"ruby-value">1</span>]
+  <span class=3D"ruby-keyword">end</span>.<span class=3D"ruby-identifier">s=
+ubmit</span>
+
+  <span class=3D"ruby-comment"># Click the upload link</span>
+  <span class=3D"ruby-identifier">upload_page</span> =3D <span class=3D"rub=
+y-identifier">a</span>.<span class=3D"ruby-identifier">click</span>(<span=
+ class=3D"ruby-identifier">my_page</span>.<span class=3D"ruby-identifier">l=
+ink_with</span>(:<span class=3D"ruby-identifier">text</span> =3D<span class=
+=3D"ruby-operator">&gt;</span> <span class=3D"ruby-regexp">/Upload/</span>))
+
+  <span class=3D"ruby-comment"># We want the basic upload page.</span>
+  <span class=3D"ruby-identifier">upload_page</span> =3D <span class=3D"rub=
+y-identifier">a</span>.<span class=3D"ruby-identifier">click</span>(<span=
+ class=3D"ruby-identifier">upload_page</span>.<span class=3D"ruby-identifie=
+r">link_with</span>(:<span class=3D"ruby-identifier">text</span> =3D<span=
+ class=3D"ruby-operator">&gt;</span> <span class=3D"ruby-regexp">/basic Upl=
+oader/</span>))
+
+  <span class=3D"ruby-comment"># Upload the file</span>
+  <span class=3D"ruby-identifier">upload_page</span>.<span class=3D"ruby-id=
+entifier">form_with</span>(:<span class=3D"ruby-identifier">method</span>=
+ =3D<span class=3D"ruby-operator">&gt;</span> <span class=3D"ruby-string">'=
+POST'</span>) <span class=3D"ruby-keyword">do</span> <span class=3D"ruby-op=
+erator">|</span><span class=3D"ruby-identifier">upload_form</span><span cla=
+ss=3D"ruby-operator">|</span>
+    <span class=3D"ruby-identifier">upload_form</span>.<span class=3D"ruby-=
+identifier">file_uploads</span>.<span class=3D"ruby-identifier">first</span=
+>.<span class=3D"ruby-identifier">file_name</span> =3D <span class=3D"ruby-=
+constant">ARGV</span>[<span class=3D"ruby-value">2</span>]
+  <span class=3D"ruby-keyword">end</span>.<span class=3D"ruby-identifier">s=
+ubmit</span>
+<span class=3D"ruby-keyword">end</span>
+</pre>
+
+<h2 id=3D"label-Pluggable+Parsers">Pluggable Parsers<span><a href=3D"#label=
+-Pluggable+Parsers">=C2=B6</a> <a href=3D"#top">=E2=86=91</a></span></h2>
+
+<p>Let's say you want HTML pages to automatically be parsed with Rubyful
+Soup. This example shows you how:</p>
+
+<pre class=3D"ruby"><span class=3D"ruby-identifier">require</span> <span cl=
+ass=3D"ruby-string">'rubygems'</span>
+<span class=3D"ruby-identifier">require</span> <span class=3D"ruby-string">=
+'mechanize'</span>
+<span class=3D"ruby-identifier">require</span> <span class=3D"ruby-string">=
+'rubyful_soup'</span>
+
+<span class=3D"ruby-keyword">class</span> <span class=3D"ruby-constant">Sou=
+pParser</span> <span class=3D"ruby-operator">&lt;</span> <span class=3D"rub=
+y-constant">Mechanize</span><span class=3D"ruby-operator">::</span><span cl=
+ass=3D"ruby-constant">Page</span>
+  <span class=3D"ruby-identifier">attr_reader</span> :<span class=3D"ruby-i=
+dentifier">soup</span>
+  <span class=3D"ruby-keyword">def</span> <span class=3D"ruby-identifier">i=
+nitialize</span>(<span class=3D"ruby-identifier">uri</span> =3D <span class=
+=3D"ruby-keyword">nil</span>, <span class=3D"ruby-identifier">response</spa=
+n> =3D <span class=3D"ruby-keyword">nil</span>, <span class=3D"ruby-identif=
+ier">body</span> =3D <span class=3D"ruby-keyword">nil</span>, <span class=
+=3D"ruby-identifier">code</span> =3D <span class=3D"ruby-keyword">nil</span=
+>)
+    <span class=3D"ruby-ivar">@soup</span> =3D <span class=3D"ruby-constant=
+">BeautifulSoup</span>.<span class=3D"ruby-identifier">new</span>(<span cla=
+ss=3D"ruby-identifier">body</span>)
+    <span class=3D"ruby-keyword">super</span>(<span class=3D"ruby-identifie=
+r">uri</span>, <span class=3D"ruby-identifier">response</span>, <span class=
+=3D"ruby-identifier">body</span>, <span class=3D"ruby-identifier">code</spa=
+n>)
+  <span class=3D"ruby-keyword">end</span>
+<span class=3D"ruby-keyword">end</span>
+
+<span class=3D"ruby-identifier">agent</span> =3D <span class=3D"ruby-consta=
+nt">Mechanize</span>.<span class=3D"ruby-identifier">new</span>
+<span class=3D"ruby-identifier">agent</span>.<span class=3D"ruby-identifier=
+">pluggable_parser</span>.<span class=3D"ruby-identifier">html</span> =3D=
+ <span class=3D"ruby-constant">SoupParser</span>
+</pre>
+
+<p>Now all HTML pages will be parsed with the SoupParser class, and
+automatically give you access to a method called 'soup' where you
+can get access to the Beautiful Soup for that page.</p>
+
+<h2 id=3D"label-Using+a+proxy">Using a proxy<span><a href=3D"#label-Using+a=
++proxy">=C2=B6</a> <a href=3D"#top">=E2=86=91</a></span></h2>
+
+<pre class=3D"ruby"><span class=3D"ruby-identifier">require</span> <span cl=
+ass=3D"ruby-string">'rubygems'</span>
+<span class=3D"ruby-identifier">require</span> <span class=3D"ruby-string">=
+'mechanize'</span>
+
+<span class=3D"ruby-identifier">agent</span> =3D <span class=3D"ruby-consta=
+nt">Mechanize</span>.<span class=3D"ruby-identifier">new</span>
+<span class=3D"ruby-identifier">agent</span>.<span class=3D"ruby-identifier=
+">set_proxy</span> <span class=3D"ruby-string">'localhost'</span>, <span cl=
+ass=3D"ruby-value">8000</span>
+<span class=3D"ruby-identifier">page</span> =3D <span class=3D"ruby-identif=
+ier">agent</span>.<span class=3D"ruby-identifier">get</span>(<span class=3D=
+"ruby-constant">ARGV</span>[<span class=3D"ruby-value">0</span>])
+<span class=3D"ruby-identifier">puts</span> <span class=3D"ruby-identifier"=
+>page</span>.<span class=3D"ruby-identifier">body</span>
+</pre>
+
+<h2 id=3D"label-The+transact+method">The transact method<span><a href=3D"#l=
+abel-The+transact+method">=C2=B6</a> <a href=3D"#top">=E2=86=91</a></span><=
+/h2>
+
+<p><a href=3D"http://docs.seattlerb.org/mechanize/Mechanize.html#method-i-t=
+ransact">Mechanize#transact</a> runs the
+given block and then resets the page history. I.e. after the block has been
+executed, you're back at the original page; no need to count how many
+times to call the back method at the end of a loop (while accounting for
+possible exceptions).</p>
+
+<p>This example also demonstrates subclassing <a href=3D"http://docs.seattl=
+erb.org/mechanize/Mechanize.html">Mechanize</a>.</p>
+
+<pre class=3D"ruby"><span class=3D"ruby-identifier">require</span> <span cl=
+ass=3D"ruby-string">'rubygems'</span>
+<span class=3D"ruby-identifier">require</span> <span class=3D"ruby-string">=
+'mechanize'</span>
+
+<span class=3D"ruby-keyword">class</span> <span class=3D"ruby-constant">Tes=
+tMech</span> <span class=3D"ruby-operator">&lt;</span> <span class=3D"ruby-=
+constant">Mechanize</span>
+  <span class=3D"ruby-keyword">def</span> <span class=3D"ruby-identifier">p=
+rocess</span>
+    <span class=3D"ruby-identifier">get</span> <span class=3D"ruby-string">=
+'http://rubyforge.org/'</span>
+    <span class=3D"ruby-identifier">search_form</span> =3D <span class=3D"r=
+uby-identifier">page</span>.<span class=3D"ruby-identifier">forms</span>.<s=
+pan class=3D"ruby-identifier">first</span>
+    <span class=3D"ruby-identifier">search_form</span>.<span class=3D"ruby-=
+identifier">words</span> =3D <span class=3D"ruby-string">'WWW'</span>
+    <span class=3D"ruby-identifier">submit</span> <span class=3D"ruby-ident=
+ifier">search_form</span>
+
+    <span class=3D"ruby-identifier">page</span>.<span class=3D"ruby-identif=
+ier">links_with</span>(:<span class=3D"ruby-identifier">href</span> =3D<spa=
+n class=3D"ruby-operator">&gt;</span> <span class=3D"ruby-regexp">%r{/proje=
+cts/}</span> ).<span class=3D"ruby-identifier">each</span> <span class=3D"r=
+uby-keyword">do</span> <span class=3D"ruby-operator">|</span><span class=3D=
+"ruby-identifier">link</span><span class=3D"ruby-operator">|</span>
+      <span class=3D"ruby-keyword">next</span> <span class=3D"ruby-keyword"=
+>if</span> <span class=3D"ruby-identifier">link</span>.<span class=3D"ruby-=
+identifier">href</span> <span class=3D"ruby-operator">=3D~</span> <span cla=
+ss=3D"ruby-regexp">%r{/projects/support/}</span>
+
+      <span class=3D"ruby-identifier">puts</span> <span class=3D"ruby-strin=
+g">'Loading %-30s %s'</span> <span class=3D"ruby-operator">%</span> [<span=
+ class=3D"ruby-identifier">link</span>.<span class=3D"ruby-identifier">href=
+</span>, <span class=3D"ruby-identifier">link</span>.<span class=3D"ruby-id=
+entifier">text</span>]
+      <span class=3D"ruby-keyword">begin</span>
+        <span class=3D"ruby-identifier">transact</span> <span class=3D"ruby=
+-keyword">do</span>
+          <span class=3D"ruby-identifier">click</span> <span class=3D"ruby-=
+identifier">link</span>
+          <span class=3D"ruby-comment"># Do stuff, maybe click more links.<=
+/span>
+        <span class=3D"ruby-keyword">end</span>
+        <span class=3D"ruby-comment"># Now we're back at the original page.=
+</span>
+
+      <span class=3D"ruby-keyword">rescue</span> =3D<span class=3D"ruby-ope=
+rator">&gt;</span> <span class=3D"ruby-identifier">e</span>
+        <span class=3D"ruby-identifier">$stderr</span>.<span class=3D"ruby-=
+identifier">puts</span> <span class=3D"ruby-node">"#{e.class}: #{e.message}=
+"</span>
+      <span class=3D"ruby-keyword">end</span>
+    <span class=3D"ruby-keyword">end</span>
+  <span class=3D"ruby-keyword">end</span>
+<span class=3D"ruby-keyword">end</span>
+
+<span class=3D"ruby-constant">TestMech</span>.<span class=3D"ruby-identifie=
+r">new</span>.<span class=3D"ruby-identifier">process</span>
+</pre>
+
+<h2 id=3D"label-Client+Certificate+Authentication+-28Mutual+Auth-29">Client=
+ Certificate Authentication (Mutual Auth)<span><a href=3D"#label-Client+Cer=
+tificate+Authentication+-28Mutual+Auth-29">=C2=B6</a> <a href=3D"#top">=E2=
+=86=91</a></span></h2>
+
+<p>In most cases a client certificate is created as an additional layer of
+security for certain websites.  The specific case that this was initially
+tested on was for automating the download of archived images from a banks
+(Wachovia) lockbox system.  Once the certificate is installed into your
+browser you will have to export it and split the certificate and private
+key into separate files.</p>
+
+<pre class=3D"ruby"><span class=3D"ruby-identifier">require</span> <span cl=
+ass=3D"ruby-string">'rubygems'</span>
+<span class=3D"ruby-identifier">require</span> <span class=3D"ruby-string">=
+'mechanize'</span>
+
+<span class=3D"ruby-comment"># create Mechanize instance</span>
+<span class=3D"ruby-identifier">agent</span> =3D <span class=3D"ruby-consta=
+nt">Mechanize</span>.<span class=3D"ruby-identifier">new</span>
+
+<span class=3D"ruby-comment"># set the path of the certificate file</span>
+<span class=3D"ruby-identifier">agent</span>.<span class=3D"ruby-identifier=
+">cert</span> =3D <span class=3D"ruby-string">'example.cer'</span>
+
+<span class=3D"ruby-comment"># set the path of the private key file</span>
+<span class=3D"ruby-identifier">agent</span>.<span class=3D"ruby-identifier=
+">key</span> =3D <span class=3D"ruby-string">'example.key'</span>
+
+<span class=3D"ruby-comment"># get the login form &amp; fill it out with th=
+e username/password</span>
+<span class=3D"ruby-identifier">login_form</span> =3D <span class=3D"ruby-i=
+dentifier">agent</span>.<span class=3D"ruby-identifier">get</span>(<span cl=
+ass=3D"ruby-string">"http://example.com/login_page"</span>).<span class=3D"=
+ruby-identifier">form</span>(<span class=3D"ruby-string">'Login'</span>)
+<span class=3D"ruby-identifier">login_form</span>.<span class=3D"ruby-const=
+ant">Userid</span> =3D <span class=3D"ruby-string">'TestUser'</span>
+<span class=3D"ruby-identifier">login_form</span>.<span class=3D"ruby-const=
+ant">Password</span> =3D <span class=3D"ruby-string">'TestPassword'</span>
+
+<span class=3D"ruby-comment"># submit login form</span>
+<span class=3D"ruby-identifier">agent</span>.<span class=3D"ruby-identifier=
+">submit</span>(<span class=3D"ruby-identifier">login_form</span>, <span cl=
+ass=3D"ruby-identifier">login_form</span>.<span class=3D"ruby-identifier">b=
+uttons</span>.<span class=3D"ruby-identifier">first</span>)
+</pre>
+
+<p>Exported files are usually in .p12 format (IE 7 &amp; Firefox 2.0) which
+stands for PKCS #12.  You can convert them from p12 to pem format by using
+the following commands:</p>
+
+<pre>openssl pkcs12 -in input_file.p12 -clcerts -out example.key -nocerts=
+ -nodes
+openssl pkcs12 -in input_file.p12 -clcerts -out example.cer -nokeys</pre>
+</main>
+
+
+
+<footer id=3D"validator-badges" role=3D"contentinfo">
+  <p><a href=3D"http://validator.w3.org/check/referer">Validate</a>
+  </p><p>Generated by <a href=3D"http://docs.seattlerb.org/rdoc/">RDoc</a>=
+ 4.2.0.
+  </p><p>Based on <a href=3D"http://deveiate.org/projects/Darkfish-RDoc/">D=
+arkfish</a> by <a href=3D"http://deveiate.org/">Michael Granger</a>.
+</p></footer>
+
+</body></html>
+------=_NextPart_000_0000_6FB0EAA5.CA8C986D
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-A90AD518:http://docs.seattlerb.org/mechanize/css/fonts.css
+
+/* Effective stylesheet produced by snapshot save */
+@font-face {
+  font-family: "Source Code Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Source Code Pro"), local("SourceCodePro-Regular"), url("urn:d=
+ownload-error:http://docs.seattlerb.org/mechanize/css/fonts/SourceCodePro-R=
+egular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Source Code Pro";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Source Code Pro Bold"), local("SourceCodePro-Bold"), url("urn=
+:not-loaded:http://docs.seattlerb.org/mechanize/css/fonts/SourceCodePro-Bol=
+d.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Lato Light"), local("Lato-Light"), url("urn:download-error:ht=
+tp://docs.seattlerb.org/mechanize/css/fonts/Lato-Light.ttf") format("truety=
+pe");
+}
+@font-face {
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: 300;
+  src: local("Lato Light Italic"), local("Lato-LightItalic"), url("urn:not-=
+loaded:http://docs.seattlerb.org/mechanize/css/fonts/Lato-LightItalic.ttf")=
+ format("truetype");
+}
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Lato Regular"), local("Lato-Regular"), url("urn:not-loaded:ht=
+tp://docs.seattlerb.org/mechanize/css/fonts/Lato-Regular.ttf") format("true=
+type");
+}
+@font-face {
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Lato Italic"), local("Lato-Italic"), url("urn:not-loaded:http=
+://docs.seattlerb.org/mechanize/css/fonts/Lato-RegularItalic.ttf") format("=
+truetype");
+}
+
+------=_NextPart_000_0000_6FB0EAA5.CA8C986D
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-20471F56:http://docs.seattlerb.org/mechanize/css/rdoc.css
+
+/* Effective stylesheet produced by snapshot save */
+* { padding: 0px; margin: 0px; }
+body { background: none repeat scroll 0% 0% rgb(250, 250, 250); font-family=
+: Lato,sans-serif; font-weight: 300; }
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span { position: relative;=
+ display: none; padding-left: 1em; line-height: 0; vertical-align: baseline=
+; font-size: 10px; }
+h1 span { top: -1.3em; }
+h2 span { top: -1.2em; }
+h1:hover span, h2:hover span, h3:hover span, h4:hover span, h5:hover span,=
+ h6:hover span { display: inline; }
+:link, :visited { color: rgb(108, 140, 34); text-decoration: none; }
+:link:hover, :visited:hover { border-bottom: 1px dotted rgb(108, 140, 34); }
+code, pre { font-family: "Source Code Pro",Monaco,monospace; }
+.initially-hidden { display: none; }
+#search-field { width: 98%; background: none repeat scroll 0% 0% white; bor=
+der: medium none; height: 1.5em; border-radius: 4px; text-align: left; }
+#search-field:focus { background: none repeat scroll 0% 0% rgb(241, 237, 18=
+6); }
+nav { float: left; width: 260px; font-family: Helvetica,sans-serif; font-si=
+ze: 14px; }
+main { display: block; margin: 0px 2em 5em 260px; padding-left: 20px; min-w=
+idth: 340px; font-size: 16px; }
+main h1, main h2, main h3, main h4, main h5, main h6 { font-family: Helveti=
+ca,sans-serif; }
+#validator-badges { clear: both; margin: 1em 1em 2em; font-size: smaller;=
+ }
+nav { margin-bottom: 1em; }
+nav .nav-section { margin-top: 2em; border-top: 2px solid rgb(170, 170, 170=
+); font-size: 90%; overflow: hidden; }
+nav h2 { margin: 0px; padding: 2px 8px; background-color: rgb(232, 232, 232=
+); color: rgb(85, 85, 85); font-size: 125%; text-align: center; }
+nav h3, #table-of-contents-navigation { margin: 0px; padding: 2px 8px; text=
+-align: right; background-color: rgb(232, 232, 232); color: rgb(85, 85, 85)=
+; }
+nav ul, nav dl, nav p { padding: 4px 8px 0px; list-style: none outside none=
+; }
+#project-navigation .nav-section { margin: 0px; border-top: 0px none; }
+#home-section h2 { text-align: center; }
+#table-of-contents-navigation { font-size: 1.2em; font-weight: bold; text-a=
+lign: center; }
+#search-section { margin-top: 0px; border-top: 0px none; }
+#search-field-wrapper { border-top: 1px solid rgb(170, 170, 170); border-bo=
+ttom: 1px solid rgb(170, 170, 170); padding: 3px 8px; background-color: rgb=
+(232, 232, 232); color: rgb(85, 85, 85); }
+ul.link-list li { white-space: nowrap; line-height: 1.4em; }
+main { color: rgb(51, 51, 51); }
+main > h1:first-child, main > h2:first-child, main > h3:first-child, main=
+ > h4:first-child, main > h5:first-child, main > h6:first-child { margin-to=
+p: 0px; }
+main h1 { margin: 2em 0px 0.5em; font-size: 1.7em; }
+main h2 { margin: 2em 0px 0.5em; font-size: 1.5em; }
+main p { margin: 0px 0px 0.5em; line-height: 1.4em; }
+main pre { margin: 1.2em 0.5em; padding: 1em; font-size: 0.8em; }
+pre { margin: 0.5em 0px; border: 1px dashed rgb(153, 153, 153); padding: 0.=
+5em; background: none repeat scroll 0% 0% rgb(38, 38, 38); color: white; ov=
+erflow: auto; }
+.ruby-constant { color: rgb(127, 255, 212); background: none repeat scroll=
+ 0% 0% transparent; }
+.ruby-keyword { color: rgb(0, 255, 255); background: none repeat scroll 0%=
+ 0% transparent; }
+.ruby-ivar { color: rgb(238, 221, 130); background: none repeat scroll 0%=
+ 0% transparent; }
+.ruby-operator { color: rgb(0, 255, 238); background: none repeat scroll 0%=
+ 0% transparent; }
+.ruby-identifier { color: rgb(255, 222, 173); background: none repeat scrol=
+l 0% 0% transparent; }
+.ruby-node { color: rgb(255, 160, 122); background: none repeat scroll 0%=
+ 0% transparent; }
+.ruby-comment { color: rgb(220, 0, 0); background: none repeat scroll 0% 0%=
+ transparent; }
+.ruby-regexp { color: rgb(255, 160, 122); background: none repeat scroll 0%=
+ 0% transparent; }
+.ruby-value { color: rgb(127, 255, 212); background: none repeat scroll 0%=
+ 0% transparent; }
+#search-results { font-family: Lato,sans-serif; font-weight: 300; }
+
+------=_NextPart_000_0000_6FB0EAA5.CA8C986D
+Content-Type: application/x-javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-6146E572:http://docs.seattlerb.org/mechanize/js/jquery.js
+
+/* Script removed by snapshot save */
+
+------=_NextPart_000_0000_6FB0EAA5.CA8C986D
+Content-Type: application/x-javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-2B1AB266:http://docs.seattlerb.org/mechanize/js/darkfish.js
+
+/* Script removed by snapshot save */
+
+------=_NextPart_000_0000_6FB0EAA5.CA8C986D--
