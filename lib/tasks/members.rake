@@ -5,15 +5,16 @@ namespace :members do
     puts "--------------catch articles start-------------------"
     time_start = Time.new.to_i
     agent = Mechanize.new
+    code_entity = HTMLEntities.new
     (1..2).each do |i|
       url = "https://ruby-china.org/topics/popular?page=#{i}"
-      catch_ruby_china_article(agent,url)
+      catch_ruby_china_article(agent,url,code_entity)
       sleep 0.1
     end
     time_end = Time.new.to_i
     puts "-----------catch members end----------Time:#{time_end-time_start}s------"
   end
-  def catch_ruby_china_article(agent,url)
+  def catch_ruby_china_article(agent,url,code_entity)
     time_start = Time.new.to_i
     page = agent.get(url)
     html_doc = Nokogiri::HTML(page.body)
@@ -25,11 +26,11 @@ namespace :members do
         detail_page = agent.get(article.base_url)
         doc = Nokogiri::HTML(detail_page.body)
         article.name = doc.css("div[class='media-body'] h1").first.text
-        article.content = doc.css("div[class='panel-body markdown']").first.to_html
+        #article.content = code_entity.encode(doc.css("div[class='panel-body markdown']").first.to_html)
+        article.content = article.name
         article.author = "https://ruby-china.org/" + doc.css("div[class='avatar media-right'] a").first['href']
         article.read_num = doc.css("div[class='info']").first.text.strip.split(' ')[-2].to_i
         article.article_type = 'ruby&rails'
-        binding.pry
         article.save
       rescue
          next
