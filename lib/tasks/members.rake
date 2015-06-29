@@ -1,12 +1,52 @@
 #encoding: utf-8
 namespace :members do
+  task :catch_articles do
+    Rake::Task[:environment].invoke
+    puts "--------------catch articles start-------------------"
+    time_start = Time.new.to_i
+    agent = Mechanize.new
+    (1..2).each do |i|
+      url = "https://ruby-china.org/topics/popular?page=#{i}"
+      catch_ruby_china_article(agent,url)
+      sleep 0.1
+    end
+    time_end = Time.new.to_i
+    puts "-----------catch members end----------Time:#{time_end-time_start}s------"
+  end
+  def catch_ruby_china_article(agent,url)
+    time_start = Time.new.to_i
+    page = agent.get(url)
+    html_doc = Nokogiri::HTML(page.body)
+    arr = html_doc.xpath("//div[@class='title media-heading']")
+    arr.each do |li|
+      begin
+        article = Article.new
+        article.base_url = "https://ruby-china.org/" + li.xpath(".//a").first.attributes['href'].value
+        detail_page = agent.get(article.base_url)
+        doc = Nokogiri::HTML(detail_page.body)
+        article.name = doc.css("div[class='media-body'] h1").first.text
+        article.content = doc.css("div[class='panel-body markdown']").first.to_html
+        article.author = "https://ruby-china.org/" + doc.css("div[class='avatar media-right'] a").first['href']
+        article.read_num = doc.css("div[class='info']").first.text.strip.split(' ')[-2].to_i
+        article.article_type = 'ruby&rails'
+        binding.pry
+        article.save
+      rescue
+         next
+      end
+    end
+    time_end = Time.new.to_i
+    puts "#{url[-10..-1]}----------------end---------Time:#{time_end-time_start}s----------"
+  end
   task :catch do
     Rake::Task[:environment].invoke
     puts "--------------catch members start-------------------"
     time_start = Time.new.to_i
     agent = Mechanize.new
-    (415..1000).each do |i|
-      url = "http://www.youyuan.com/find/beijing/mm0-0/advance-0-0-0-0-0-0-0/p#{i}/"
+    # beijing:1000
+    # tianjin:100
+    (861..1000).each do |i|
+      url = "http://www.youyuan.com/find/tianjin/mm0-0/advance-0-0-0-0-0-0-0/p#{i}/"
       catch_member(agent,url)
       sleep 0.1
     end
