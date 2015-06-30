@@ -8,4 +8,4 @@ default: &default
   host: localhost
 development:
   <<: *default
-  database: miai
+  database: miai_opt

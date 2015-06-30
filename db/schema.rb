@@ -23,6 +23,9 @@ ActiveRecord::Schema.define(version: 20150629131752) do
     t.datetime "updated_at",                null: false
   end
 
+  add_index "active_member_numbers", ["channel_id"], name: "index_active_member_numbers_on_channel_id", using: :btree
+  add_index "active_member_numbers", ["date_str"], name: "index_active_member_numbers_on_date_str", using: :btree
+
   create_table "albums", force: :cascade do |t|
     t.string   "name",       limit: 255
     t.integer  "member_id",  limit: 4
@@ -92,12 +95,31 @@ ActiveRecord::Schema.define(version: 20150629131752) do
   create_table "articles", force: :cascade do |t|
     t.string   "name",         limit: 255
     t.string   "base_url",     limit: 255
-    t.text     "content",      limit: 65535
+    t.text     "content",      limit: 4294967295
     t.string   "author",       limit: 255
     t.integer  "read_num",     limit: 4
     t.string   "article_type", limit: 255
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
+  end
+
+  create_table "bucket_actions", force: :cascade do |t|
+    t.integer  "bucket_id",   limit: 4
+    t.string   "name",        limit: 255
+    t.string   "description", limit: 255
+    t.string   "status",      limit: 11,  default: "inactivated"
+    t.datetime "created_at",                                      null: false
+    t.datetime "updated_at",                                      null: false
+  end
+
+  add_index "bucket_actions", ["bucket_id"], name: "index_bucket_actions_on_bucket_id", using: :btree
+  add_index "bucket_actions", ["status"], name: "index_bucket_actions_on_status", using: :btree
+
+  create_table "buckets", force: :cascade do |t|
+    t.string   "name",        limit: 255
+    t.string   "description", limit: 255
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
   end
 
   create_table "channels", force: :cascade do |t|
@@ -118,9 +140,6 @@ ActiveRecord::Schema.define(version: 20150629131752) do
     t.string   "notes",      limit: 255
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
-  end
-
-  create_table "ids", force: :cascade do |t|
   end
 
   create_table "kuaiqian_pays", force: :cascade do |t|
@@ -226,13 +245,13 @@ ActiveRecord::Schema.define(version: 20150629131752) do
     t.integer  "rank",        limit: 4
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.integer  "city_id",     limit: 2
   end
 
   add_index "member_infos", ["birthday"], name: "index_member_infos_on_birthday", using: :btree
   add_index "member_infos", ["height"], name: "index_member_infos_on_height", using: :btree
   add_index "member_infos", ["location_id"], name: "index_member_infos_on_location_id", using: :btree
   add_index "member_infos", ["member_id"], name: "index_member_infos_on_member_id", using: :btree
-  add_index "member_infos", ["nickname"], name: "idx_on_nickname", using: :btree
 
   create_table "member_monologues", force: :cascade do |t|
     t.integer  "member_id",  limit: 4,               null: false
@@ -339,6 +358,7 @@ ActiveRecord::Schema.define(version: 20150629131752) do
     t.integer  "captcha_flag",       limit: 2
     t.date     "msg_expired_time"
     t.integer  "application_id",     limit: 2
+    t.integer  "bucket_action_id",   limit: 4
   end
 
   add_index "members", ["created_at"], name: "index_members_on_created_at", using: :btree
@@ -374,6 +394,8 @@ ActiveRecord::Schema.define(version: 20150629131752) do
     t.decimal  "total_fee",                precision: 8, scale: 2
   end
 
+  add_index "pays", ["result_code"], name: "idx_on_result_code", using: :btree
+
   create_table "pictures", force: :cascade do |t|
     t.integer  "album_id",   limit: 4
     t.string   "path",       limit: 255
@@ -396,6 +418,10 @@ ActiveRecord::Schema.define(version: 20150629131752) do
     t.integer  "status",          limit: 4,   default: 0
     t.integer  "with_flower",     limit: 4,   default: 0
   end
+
+  add_index "private_msgs", ["created_at"], name: "idx_on_created_at", using: :btree
+  add_index "private_msgs", ["from_member_id"], name: "index_private_msgs_on_from_member_id", using: :btree
+  add_index "private_msgs", ["to_member_id"], name: "index_private_msgs_on_to_member_id", using: :btree
 
   create_table "products", force: :cascade do |t|
     t.string   "name",       limit: 255
@@ -429,6 +455,9 @@ ActiveRecord::Schema.define(version: 20150629131752) do
     t.datetime "updated_at",           null: false
   end
 
+  add_index "recents", ["member_id"], name: "index_recents_on_member_id", using: :btree
+  add_index "recents", ["visitor_id"], name: "index_recents_on_visitor_id", using: :btree
+
   create_table "regions", force: :cascade do |t|
     t.string   "code",       limit: 255
     t.integer  "parent_id",  limit: 4
@@ -450,10 +479,11 @@ ActiveRecord::Schema.define(version: 20150629131752) do
   add_index "reports", ["reporter_id"], name: "index_reports_on_reporter_id", using: :btree
 
   create_table "settings", force: :cascade do |t|
-    t.string   "name",       limit: 255
-    t.string   "value",      limit: 255
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.string   "name",        limit: 255
+    t.string   "value",       limit: 255
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+    t.string   "description", limit: 255
   end
 
   create_table "strategies", force: :cascade do |t|
@@ -601,4 +631,5 @@ ActiveRecord::Schema.define(version: 20150629131752) do
     t.datetime "updated_at",                                                          null: false
   end
 
+  add_foreign_key "bucket_actions", "buckets"
 end

@@ -45,3 +45,16 @@ end
 gem 'mechanize'
 gem 'nokogiri'
 gem 'htmlentities'
+# haml
+gem 'haml'
+gem 'haml-rails'
+# 分页插件
+gem 'kaminari'
+# kaminari bootstrap theme分页插件
+gem 'bootstrap-kaminari-views'
+gem 'simple_form', '>= 3.1.0.rc1'
+
+gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+gem 'puma'
+# http请求
+gem 'faraday'

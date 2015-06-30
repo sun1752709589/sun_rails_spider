@@ -6,8 +6,8 @@ namespace :members do
     time_start = Time.new.to_i
     agent = Mechanize.new
     code_entity = HTMLEntities.new
-    (1..2).each do |i|
-      url = "https://ruby-china.org/topics/popular?page=#{i}"
+    (1..200).each do |i|
+      url = "https://ruby-china.org/topics?page=#{i}"
       catch_ruby_china_article(agent,url,code_entity)
       sleep 0.1
     end
@@ -22,15 +22,15 @@ namespace :members do
     arr.each do |li|
       begin
         article = Article.new
-        article.base_url = "https://ruby-china.org/" + li.xpath(".//a").first.attributes['href'].value
+        article.base_url = "https://ruby-china.org" + li.xpath(".//a").first.attributes['href'].value
         detail_page = agent.get(article.base_url)
         doc = Nokogiri::HTML(detail_page.body)
         article.name = doc.css("div[class='media-body'] h1").first.text
-        #article.content = code_entity.encode(doc.css("div[class='panel-body markdown']").first.to_html)
-        article.content = article.name
-        article.author = "https://ruby-china.org/" + doc.css("div[class='avatar media-right'] a").first['href']
+        article.content = code_entity.encode(doc.css("div[class='panel-body markdown']").first.to_html)
+        #article.content = article.name
+        article.author = "https://ruby-china.org" + doc.css("div[class='avatar media-right'] a").first['href']
         article.read_num = doc.css("div[class='info']").first.text.strip.split(' ')[-2].to_i
-        article.article_type = 'ruby&rails'
+        article.article_type = doc.css("div[class='info'] a").first.text.strip
         article.save
       rescue
          next

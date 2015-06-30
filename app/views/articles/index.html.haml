@@ -1,0 +1,21 @@
+.container
+  %table.table.table-striped
+    %thead
+      %tr
+        %th 文章标题
+        %th 阅读次数
+        %th 原始地址
+        %th 文章作者
+        %th 文章类型
+        %th=t '.actions', :default => t("helpers.actions")
+  
+    - @articles.each do |article|
+      %tr
+        %td= article.name
+        %td= article.read_num
+        %td= article.base_url
+        %td= article.author
+        %td= article.article_type
+        %td
+          = link_to 'show', article_path(article), :class => 'btn btn-mini'
+  = paginate @articles
