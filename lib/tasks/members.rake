@@ -6,7 +6,7 @@ namespace :members do
     time_start = Time.new.to_i
     agent = Mechanize.new
     code_entity = HTMLEntities.new
-    (1..200).each do |i|
+    (201..500).each do |i|
       url = "https://ruby-china.org/topics?page=#{i}"
       catch_ruby_china_article(agent,url,code_entity)
       sleep 0.1

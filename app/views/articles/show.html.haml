@@ -1,2 +1,8 @@
 %div.container
+  %h2.text-center
+    = @article.name
+  %h4.text-right
+    %br
+    阅读次数:
+    = @article.read_num
   = raw(@content)
