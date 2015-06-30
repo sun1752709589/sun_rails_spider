@@ -1,12 +1,12 @@
 #encoding: utf-8
-namespace :members do
+namespace :catch do
   task :catch_articles do
     Rake::Task[:environment].invoke
     puts "--------------catch articles start-------------------"
     time_start = Time.new.to_i
     agent = Mechanize.new
     code_entity = HTMLEntities.new
-    (201..500).each do |i|
+    (1..100).each do |i|
       url = "https://ruby-china.org/topics?page=#{i}"
       catch_ruby_china_article(agent,url,code_entity)
       sleep 0.1
@@ -39,7 +39,7 @@ namespace :members do
     time_end = Time.new.to_i
     puts "#{url[-10..-1]}----------------end---------Time:#{time_end-time_start}s----------"
   end
-  task :catch do
+  task :catch_members do
     Rake::Task[:environment].invoke
     puts "--------------catch members start-------------------"
     time_start = Time.new.to_i
