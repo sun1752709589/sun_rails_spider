@@ -6,7 +6,7 @@ namespace :catch do
     time_start = Time.new.to_i
     agent = Mechanize.new
     code_entity = HTMLEntities.new
-    (1..100).each do |i|
+    (101..200).each do |i|
       aaa = rand(2)
       if 0 == aaa && i < 90
         url = "https://ruby-china.org/topics/popular?page=#{i}"
