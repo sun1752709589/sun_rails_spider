@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150629131752) do
+ActiveRecord::Schema.define(version: 20150701140204) do
 
   create_table "articles", force: :cascade do |t|
     t.string   "name",         limit: 255
@@ -22,6 +22,52 @@ ActiveRecord::Schema.define(version: 20150629131752) do
     t.string   "article_type", limit: 255
     t.datetime "created_at",                      null: false
     t.datetime "updated_at",                      null: false
+  end
+
+  create_table "companies", force: :cascade do |t|
+    t.string   "name",             limit: 255
+    t.integer  "industry_id",      limit: 4
+    t.integer  "nature_id",        limit: 4
+    t.integer  "scale_id",         limit: 4
+    t.text     "detail_introduce", limit: 65535
+    t.string   "website",          limit: 255
+    t.string   "zip_code",         limit: 255
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
+  end
+
+  create_table "industries", force: :cascade do |t|
+    t.string   "name",        limit: 255
+    t.string   "description", limit: 255
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+  end
+
+  create_table "natures", force: :cascade do |t|
+    t.string   "name",        limit: 255
+    t.string   "description", limit: 255
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+  end
+
+  create_table "scales", force: :cascade do |t|
+    t.string   "name",        limit: 255
+    t.string   "description", limit: 255
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+  end
+
+  create_table "taggings", force: :cascade do |t|
+    t.integer  "tag_id",     limit: 4
+    t.integer  "company_id", limit: 4
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+  end
+
+  create_table "tags", force: :cascade do |t|
+    t.string   "name",       limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
 end
