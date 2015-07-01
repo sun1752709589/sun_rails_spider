@@ -6,10 +6,15 @@ namespace :catch do
     time_start = Time.new.to_i
     agent = Mechanize.new
     code_entity = HTMLEntities.new
-    (1..100).each do |i|
-      url = "https://ruby-china.org/topics?page=#{i}"
+    (101..200).each do |i|
+      aaa = rand(2)
+      if 0 == aaa && i < 90
+        url = "https://ruby-china.org/topics/popular?page=#{i}"
+      else
+        url = "https://ruby-china.org/topics?page=#{i}"
+      end
       catch_ruby_china_article(agent,url,code_entity)
-      sleep 0.1
+      sleep 1
     end
     time_end = Time.new.to_i
     puts "-----------catch members end----------Time:#{time_end-time_start}s------"

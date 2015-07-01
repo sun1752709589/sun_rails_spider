@@ -13,8 +13,10 @@
       %tr
         %td= article.name
         %td= article.read_num
-        %td= article.base_url
-        %td= article.author
+        %td
+          = link_to '原文', "#{article.base_url}", :target => '_blank'
+        %td
+          = link_to '作者', "#{article.author}", :target => '_blank'
         %td= article.article_type
         %td
           = link_to 'show', article_path(article), :class => 'btn btn-mini'
