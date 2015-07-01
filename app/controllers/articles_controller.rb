@@ -5,6 +5,7 @@ class ArticlesController < ApplicationController
   end
   def show
     @article = Article.find(params[:id])
+    @article.update_attribute(:read_num, @article.read_num + 1)
     code_entity = HTMLEntities.new
     @content = code_entity.decode(@article.content)
   end
