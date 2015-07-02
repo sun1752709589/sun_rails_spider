@@ -8,7 +8,7 @@ namespace :catch_company do
     time_start = Time.new.to_i
     agent = Mechanize.new
     code_entity = HTMLEntities.new
-    (11..100).each do |i|
+    (25..100).each do |i|
         url = "http://search.51job.com/jobsearch/search_result.php?keyword=java&curr_page=#{i}"
       catch_51_companys(agent,url,code_entity)
       sleep 1
@@ -26,13 +26,14 @@ namespace :catch_company do
     arr.each do |li|
       begin
         company_name = li.css("td[@class='td2'] a").first.text
-        next if company_name.nil? || company_name.blank? || !Company.where(name: company_name).count.zero?
+        next if company_name.nil? || company_name.blank?
         # save company info
         company_url = li.css("td[@class='td2'] a").first['href']
         detail_page = agent.get(company_url)
         doc = Nokogiri::HTML(detail_page.body)
         next if doc.css("//p[@class='txt_font1']").size.zero?
         company_name = doc.css("td[@class='sr_bt']").first.text.split('        ')[0]
+        next if !Company.where(name: company_name).count.zero?
         #binding.pry
         basic_info_doc = doc.css("div").css("table[@class='jobs_1']").css("tr").last
         basic_info_arr = basic_info_doc.text.split('：')
