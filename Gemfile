@@ -58,3 +58,4 @@ gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootst
 gem 'puma'
 # http请求
 gem 'faraday'
+gem 'iconv'
