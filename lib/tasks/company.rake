@@ -8,7 +8,7 @@ namespace :catch_company do
     time_start = Time.new.to_i
     agent = Mechanize.new
     code_entity = HTMLEntities.new
-    (1..100).each do |i|
+    (11..100).each do |i|
         url = "http://search.51job.com/jobsearch/search_result.php?keyword=java&curr_page=#{i}"
       catch_51_companys(agent,url,code_entity)
       sleep 1
@@ -32,8 +32,8 @@ namespace :catch_company do
         detail_page = agent.get(company_url)
         doc = Nokogiri::HTML(detail_page.body)
         next if doc.css("//p[@class='txt_font1']").size.zero?
-        company_name = li.css("td[@class='sr_bt']").text
-        binding.pry
+        company_name = doc.css("td[@class='sr_bt']").first.text.split('        ')[0]
+        #binding.pry
         basic_info_doc = doc.css("div").css("table[@class='jobs_1']").css("tr").last
         basic_info_arr = basic_info_doc.text.split('：')
         basic_info = basic_info_arr
@@ -54,7 +54,20 @@ namespace :catch_company do
                                   scale_id: company_scale_id, detail_introduce: company_desc,website: company_website,
                                   address: company_address, zip_code: company_zip_code
         })
-        company.save
+        if company.save
+          tag_url = li.css("td[@class='td1'] a").first['href']
+          tag_page = agent.get(tag_url)
+          doc = Nokogiri::HTML(tag_page.body)
+          next if doc.css("//div[@class='jobdetail_divRight_span']").size.zero?
+          tag_arr = doc.css("span[@class='Welfare_label']")
+          if tag_arr.size > 0
+            tag_arr.each do |item|
+              tag_str = item.text
+              tag_id = Tag.find_or_create_by(name: tag_str).id
+              Tagging.create({tag_id: tag_id, company_id: company.id})
+            end
+          end
+        end
       rescue
          next
       end

@@ -140,6 +140,8 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    pry-nav (0.2.4)
+      pry (>= 0.9.10, < 0.11.0)
     puma (2.11.1)
       rack (>= 1.1, < 2.0)
     rack (1.6.4)
@@ -235,6 +237,7 @@ DEPENDENCIES
   mysql2
   nokogiri
   pry
+  pry-nav
   puma
   rails (= 4.2.1)
   sass-rails (~> 5.0)
