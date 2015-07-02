@@ -1,0 +1,13 @@
+.container
+  %table.table.table-striped
+    %thead
+      %tr
+        %th name
+        %th=t '.actions', :default => t("helpers.actions")
+  
+    - @companies.each do |item|
+      %tr
+        %td= item.name
+        %td
+          = link_to 'show', company_path(item), :class => 'btn btn-mini'
+  = paginate @companies
