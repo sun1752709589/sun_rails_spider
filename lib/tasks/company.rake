@@ -8,7 +8,7 @@ namespace :catch_company do
     time_start = Time.new.to_i
     agent = Mechanize.new
     code_entity = HTMLEntities.new
-    (25..100).each do |i|
+    (301..500).each do |i|
         url = "http://search.51job.com/jobsearch/search_result.php?keyword=java&curr_page=#{i}"
       catch_51_companys(agent,url,code_entity)
       sleep 1

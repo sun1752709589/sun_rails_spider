@@ -2,12 +2,31 @@
   %table.table.table-striped
     %thead
       %tr
-        %th name
+        %th 公司名
+        %th 所属行业
+        %th 公司性质
+        %th 公司规模
+        %th 邮编
+        %th 网址
+        %th 详情
+        %th 地址
+        %th tags
         %th=t '.actions', :default => t("helpers.actions")
   
     - @companies.each do |item|
       %tr
         %td= item.name
+        %td= item.industry.name if item.industry
+        %td= item.nature.name if item.nature
+        %td= item.scale.name if item.scale
+        %td= item.zip_code
+        %td= item.website
+        %td
+          = link_to '详情', "#{item.detail_info_url}", :target => '_blank'
+        %td= item.address
+        %th
+          - item.get_tags.each do |tag|
+            %span.label.label-default= tag
         %td
           = link_to 'show', company_path(item), :class => 'btn btn-mini'
   = paginate @companies
