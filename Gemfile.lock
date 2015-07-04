@@ -1,4 +1,10 @@
 GIT
+  remote: git://github.com/mperham/dalli.git
+  revision: 819dc9dce78aa678233ba58722a6f3dd6b6ff508
+  specs:
+    dalli (2.7.4)
+
+GIT
   remote: git://github.com/seyhunak/twitter-bootstrap-rails.git
   revision: 935f53bb55ef736260fa2ef04e29da2fc3fb2b3f
   specs:
@@ -53,6 +59,7 @@ GEM
     bootstrap-kaminari-views (0.0.5)
       kaminari (>= 0.13)
       rails (>= 3.1)
+    bson (3.1.2)
     builder (3.2.2)
     byebug (5.0.0)
       columnize (= 0.9.0)
@@ -66,6 +73,7 @@ GEM
     coffee-script-source (1.9.1.1)
     columnize (0.9.0)
     commonjs (0.2.7)
+    connection_pool (2.2.0)
     debug_inspector (0.0.2)
     domain_name (0.5.24)
       unf (>= 0.0.5, < 1.0.0)
@@ -83,6 +91,7 @@ GEM
       haml (>= 4.0.6, < 5.0)
       html2haml (>= 1.0.1)
       railties (>= 4.0.1)
+    hiredis (0.4.5)
     html2haml (2.0.0)
       erubis (~> 2.7.0)
       haml (~> 4.0.0)
@@ -128,6 +137,15 @@ GEM
     mime-types (2.6.1)
     mini_portile (0.6.2)
     minitest (5.7.0)
+    mongoid (4.0.2)
+      activemodel (~> 4.0)
+      moped (~> 2.0.0)
+      origin (~> 2.1)
+      tzinfo (>= 0.3.37)
+    moped (2.0.6)
+      bson (~> 3.0)
+      connection_pool (~> 2.0)
+      optionable (~> 0.2.0)
     multi_json (1.11.1)
     multipart-post (2.0.0)
     mysql2 (0.3.18)
@@ -136,6 +154,8 @@ GEM
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     ntlm-http (0.1.1)
+    optionable (0.2.0)
+    origin (2.1.1)
     pry (0.10.1)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -173,6 +193,7 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rake (10.4.2)
     rdoc (4.2.0)
+    redis (3.0.7)
     ruby_parser (3.6.5)
       sexp_processor (~> 4.1)
     sass (3.4.15)
@@ -225,21 +246,25 @@ DEPENDENCIES
   bootstrap-kaminari-views
   byebug
   coffee-rails (~> 4.1.0)
+  dalli!
   faraday
   haml
   haml-rails
+  hiredis (~> 0.4.5)
   htmlentities
   iconv
   jbuilder (~> 2.0)
   jquery-rails
   kaminari
   mechanize
+  mongoid (~> 4.0.0)
   mysql2
   nokogiri
   pry
   pry-nav
   puma
   rails (= 4.2.1)
+  redis (~> 3.0.1)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   simple_form (>= 3.1.0.rc1)
