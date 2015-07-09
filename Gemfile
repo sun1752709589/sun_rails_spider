@@ -31,7 +31,7 @@ gem "mongoid", "~> 4.0.0"
 gem "redis", "~> 3.0.1"
 gem "hiredis", "~> 0.4.5"
 #cache
-gem 'dalli', github: 'mperham/dalli'
+gem 'dalli' #, github: 'mperham/dalli'
 
 group :development, :test do
   gem 'byebug'

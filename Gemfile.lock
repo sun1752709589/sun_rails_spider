@@ -1,10 +1,4 @@
 GIT
-  remote: git://github.com/mperham/dalli.git
-  revision: 819dc9dce78aa678233ba58722a6f3dd6b6ff508
-  specs:
-    dalli (2.7.4)
-
-GIT
   remote: git://github.com/seyhunak/twitter-bootstrap-rails.git
   revision: 935f53bb55ef736260fa2ef04e29da2fc3fb2b3f
   specs:
@@ -74,6 +68,7 @@ GEM
     columnize (0.9.0)
     commonjs (0.2.7)
     connection_pool (2.2.0)
+    dalli (2.7.3)
     debug_inspector (0.0.2)
     domain_name (0.5.24)
       unf (>= 0.0.5, < 1.0.0)
@@ -246,7 +241,7 @@ DEPENDENCIES
   bootstrap-kaminari-views
   byebug
   coffee-rails (~> 4.1.0)
-  dalli!
+  dalli
   faraday
   haml
   haml-rails
