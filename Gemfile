@@ -1,5 +1,5 @@
 source 'https://ruby.taobao.org'
-gem 'rails', '4.2.1'
+gem 'rails', '4.2.3'
 gem 'mysql2'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -39,4 +39,6 @@ group :development, :test do
   gem 'pry-nav'
   gem 'web-console', '~> 2.0'
   gem 'spring'
-end
+  gem 'hirb'
+  gem 'awesome_print'
+ end
