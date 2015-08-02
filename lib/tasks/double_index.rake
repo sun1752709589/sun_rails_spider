@@ -2,19 +2,30 @@
 namespace :index do
   task :find_double_index do
     Rake::Task[:environment].invoke
-    puts "--------------catch articles start-------------------"
+    puts "--------------execute start-------------------"
     time_start = Time.new.to_i
+    result = {}
     sql="show tables"
-    tmp=ActiveRecord::Base.connection.execute(sql)
-    tmp.each do |item|
+    tables=ActiveRecord::Base.connection.execute(sql)
+    tables.each do |item|
+      tmp_hash = {}
       keys = item[0].classify.constantize.connection.execute("show index from #{item[0]}");
       keys.each do |item|
         binding.pry
+        tmp_hash["#{item[2]}"] = {} if tmp_hash["#{item[2]}"].nil?
+        tmp_hash["#{item[2]}"].merge!({non_unique: item[1]})
+        if tmp_hash["#{item[2]}"]['columns'].nil?
+          tmp_hash["#{item[2]}"]['columns'] = [item[4]]
+        else
+          tmp_hash["#{item[2]}"]['columns'] << item[4]
+        end
+
+
       end
     end
     puts tmp.first
     time_end = Time.new.to_i
-    puts "-----------catch members end----------Time:#{time_end-time_start}s------"
+    puts "-----------execute end----------Time:#{time_end-time_start}s------"
   end
   task :get_mysql_information_schema do
     Rake::Task[:environment].invoke
