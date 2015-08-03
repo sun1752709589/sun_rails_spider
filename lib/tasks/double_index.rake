@@ -21,7 +21,7 @@ namespace :index do
       keys.each do |item|
         tmp_hash["#{item[2]}"] = {} if tmp_hash["#{item[2]}"].nil?
         #tmp_hash["#{item[2]}"].merge!({non_unique: item[1]})
-        item[4] += "|#{item[7]}" if !item[7].nil?
+        item[4] += "(#{item[7]})" if !item[7].nil?
         if tmp_hash["#{item[2]}"]['columns'].nil?
           tmp_hash["#{item[2]}"]['columns'] = [item[4]]
         else
@@ -32,16 +32,22 @@ namespace :index do
       result.merge!({item[0] => tmp_hash})
     end
     result.each do |table,indexs|
+      handled_index = []
       indexs.each do |index_name_outer,index_columns_outer|
         indexs.each do |index_name_inner,index_columns_inner|
-          next if index_name_inner == index_name_outer
-          if index_columns_inner['columns'] == index_columns_outer['columns'] && index_columns_inner['index_type'] == index_columns_outer['index_type']
-            double_index << "#{table}上存在重复的索引:#{index_name_outer}&#{index_name_inner}"
+          next if index_name_inner == index_name_outer || index_columns_inner['index_type'] != index_columns_outer['index_type'] || handled_index.include?(index_name_inner.to_s + index_name_outer.to_s) || handled_index.include?(index_name_outer.to_s + index_name_inner.to_s)
+          #重复索引
+          if get_index_columns_sorted(index_columns_inner['columns']) == get_index_columns_sorted(index_columns_outer['columns'])
+            double_index << "#{table}上存在重复的索引:#{index_name_outer.to_s + get_index_columns_sorted(index_columns_outer['columns'],true)}&#{index_name_inner.to_s + get_index_columns_sorted(index_columns_inner['columns'],true)}"
           end
+          #冗余索引
+
+          handled_index << index_name_inner.to_s + index_name_outer.to_s
         end
       end
+      handled_index = []
     end
-    binding.pry
+    puts double_index.inspect
     time_end = Time.new.to_i
     puts "-----------execute end----------Time:#{time_end-time_start}s------"
   end
@@ -71,5 +77,18 @@ namespace :index do
     end
     time_end = Time.new.to_i
     puts "-----------catch members end----------Time:#{time_end-time_start}s------"
+  end
+  def get_index_columns_sorted(columns, sub_part = false)
+    if sub_part
+      '(' + columns.join(',') + ')'
+    else
+      '(' + columns.map do |item|
+        if item.include?('(')
+          item[0...item.index('(')]
+        else
+          item
+        end
+       end.join(',') + ')'
+    end
   end
 end
