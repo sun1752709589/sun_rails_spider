@@ -39,15 +39,20 @@ namespace :index do
           #重复索引
           if get_index_columns_sorted(index_columns_inner['columns']) == get_index_columns_sorted(index_columns_outer['columns'])
             double_index << "#{table}上存在重复的索引:#{index_name_outer.to_s + get_index_columns_sorted(index_columns_outer['columns'],true)}&#{index_name_inner.to_s + get_index_columns_sorted(index_columns_inner['columns'],true)}"
+          elsif get_index_columns_join(index_columns_inner['columns']).include?(get_index_columns_join(index_columns_outer['columns'])) || get_index_columns_join(index_columns_outer['columns']).include?(get_index_columns_join(index_columns_inner['columns']))
+            #冗余索引
+            redundancy_index << "#{table}上存在冗余的索引:#{index_name_outer.to_s + get_index_columns_sorted(index_columns_outer['columns'],true)}&#{index_name_inner.to_s + get_index_columns_sorted(index_columns_inner['columns'],true)}"
           end
-          #冗余索引
-
           handled_index << index_name_inner.to_s + index_name_outer.to_s
         end
       end
       handled_index = []
     end
+    puts "*" * 50
     puts double_index.inspect
+    puts "*" * 50
+    puts redundancy_index.inspect
+    puts "*" * 50
     time_end = Time.new.to_i
     puts "-----------execute end----------Time:#{time_end-time_start}s------"
   end
@@ -90,5 +95,14 @@ namespace :index do
         end
        end.join(',') + ')'
     end
+  end
+  def get_index_columns_join(columns)
+    columns.map do |item|
+      if item.include?('(')
+        item[0...item.index('(')]
+      else
+        item
+      end
+     end.join(',')
   end
 end
