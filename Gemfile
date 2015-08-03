@@ -32,6 +32,8 @@ gem "redis", "~> 3.0.1"
 gem "hiredis", "~> 0.4.5"
 #cache
 gem 'dalli' #, github: 'mperham/dalli'
+# background cron
+gem 'sidekiq'
 
 group :development, :test do
   gem 'byebug'
@@ -41,4 +43,7 @@ group :development, :test do
   gem 'spring'
   gem 'hirb'
   gem 'awesome_print'
- end
+  gem 'irbtools', require: 'irbtools/binding'
+  gem 'settingslogic'
+  gem 'modular_migration'
+end
