@@ -62,14 +62,32 @@ namespace :index do
     Rake::Task[:environment].invoke
     puts "--------------catch articles start-------------------"
     time_start = Time.new.to_i
+    # sql="show tables"
+    # tables=ActiveRecord::Base.connection.execute(sql) # 得到当前数据库所有表
+    sql = "select database()"
+    database = ActiveRecord::Base.connection.execute(sql).first[0]
+
     sql="use information_schema"
-    tmp=ActiveRecord::Base.connection.execute(sql)
-    sql = "select data_length,index_length from tables where table_schema='spider' and table_name='companies'"
-    tmp=ActiveRecord::Base.connection.execute(sql)
-    tmp.each do |item|
-      binding.pry
+    ActiveRecord::Base.connection.execute(sql)
+    sql = "select TABLE_SCHEMA,TABLE_NAME,TABLE_TYPE,ENGINE,TABLE_ROWS,AVG_ROW_LENGTH,DATA_LENGTH,INDEX_LENGTH,(DATA_LENGTH+INDEX_LENGTH) as TABLE_LENGTH,AUTO_INCREMENT,CREATE_TIME,TABLE_COLLATION from information_schema.tables where table_schema = '#{database}'"
+    tables = ActiveRecord::Base.connection.execute(sql)
+    puts_line(12,10)
+    head = ["数据库","表名","表类型","表引擎","表数据行数","平均行长度","数据大小","索引大小","总数据量","auto_increment","创建时间","字符集排序规则"]
+    puts_line_arr(head,10)
+    puts_line(12,10)
+
+    tables.each do |item|
+      item.each_with_index do |data,index|
+        if [6,7,8].include?(index)
+          item[index] = byte2mb(data)
+        end
+        if 10 == index
+          item[index] = item[index].to_s[0..20]
+        end
+      end
+      puts_line_arr(item,10)
     end
-    puts tmp.first
+    puts_line(12,10)
     time_end = Time.new.to_i
     puts "-----------catch members end----------Time:#{time_end-time_start}s------"
   end
@@ -129,5 +147,37 @@ namespace :index do
       return false if item != columns2[index]
     end
     return true
+  end
+  def byte2mb(byte)
+    byte = byte.to_f
+    if byte < 1024
+      return "#{byte}Byte"
+    elsif byte/1024 < 1024
+      return "#{(byte/1024).round(2)}KB"
+    elsif byte/(1024**2) < 1024
+      return "#{(byte/(1024**2)).round(2)}MB"
+    elsif byte/(1024**3) < 1024
+      return "#{(byte/(1024**3)).round(2)}GB"
+    elsif byte/(1024**4) < 1024
+      return "#{(byte/(1024**4)).round(2)}TB"
+    end
+  end
+  def puts_line(n,size)
+    str = "+"
+    (1..n).each do |i|
+      str += "-"*size+"+"
+    end
+    puts str
+  end
+  def puts_line_arr(arr,size)
+    str = "|"
+    arr.each do |item|
+      if size > item.size
+        str += item.to_s + ' '*(size-item.size)+ "|"
+      else
+        str += item[0..size] + "|"[0..size]
+      end
+    end
+    puts str
   end
 end
