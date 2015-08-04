@@ -15,7 +15,6 @@ namespace :index do
     sql="show tables"
     tables=ActiveRecord::Base.connection.execute(sql)
     tables.each do |item|
-      next if item.first.include?('schema_migrations')
       tmp_hash = {}
       keys = ActiveRecord::Base.connection.execute("show index from #{item[0]}");
       keys.each do |item|
@@ -39,7 +38,7 @@ namespace :index do
           #重复索引
           if get_index_columns_sorted(index_columns_inner['columns']) == get_index_columns_sorted(index_columns_outer['columns'])
             double_index << "#{table}上存在重复的索引:#{index_name_outer.to_s + get_index_columns_sorted(index_columns_outer['columns'],true)}&#{index_name_inner.to_s + get_index_columns_sorted(index_columns_inner['columns'],true)}"
-          elsif get_index_columns_join(index_columns_inner['columns']).include?(get_index_columns_join(index_columns_outer['columns'])) || get_index_columns_join(index_columns_outer['columns']).include?(get_index_columns_join(index_columns_inner['columns']))
+          elsif has_redundancy_index?(index_columns_inner['columns'],index_columns_outer['columns'])
             #冗余索引
             redundancy_index << "#{table}上存在冗余的索引:#{index_name_outer.to_s + get_index_columns_sorted(index_columns_outer['columns'],true)}&#{index_name_inner.to_s + get_index_columns_sorted(index_columns_inner['columns'],true)}"
           end
@@ -48,11 +47,14 @@ namespace :index do
       end
       handled_index = []
     end
-    puts "*" * 50
-    puts double_index.inspect
-    puts "*" * 50
-    puts redundancy_index.inspect
-    puts "*" * 50
+    puts "*" * 20 + "重复索引" + "*" * 20
+    double_index.each do |item|
+      puts item
+    end
+    puts "*" * 20 + "冗余索引" + "*" * 20
+    redundancy_index.each do |item|
+      puts item
+    end
     time_end = Time.new.to_i
     puts "-----------execute end----------Time:#{time_end-time_start}s------"
   end
@@ -104,5 +106,28 @@ namespace :index do
         item
       end
      end.join(',')
+  end
+  def has_redundancy_index?(columns1, columns2)
+    columns1 = columns1.map do |item|
+      if item.include?('(')
+        item[0...item.index('(')]
+      else
+        item
+      end
+    end
+    columns2 = columns2.map do |item|
+      if item.include?('(')
+        item[0...item.index('(')]
+      else
+        item
+      end
+    end
+    if columns1.size > columns2.size
+      columns1,columns2 = columns2,columns1
+    end
+    columns1.each_with_index do |item,index|
+      return false if item != columns2[index]
+    end
+    return true
   end
 end
