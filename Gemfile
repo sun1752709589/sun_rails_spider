@@ -46,4 +46,6 @@ group :development, :test do
   gem 'irbtools', require: 'irbtools/binding'
   gem 'settingslogic'
   gem 'modular_migration'
+  gem 'birt'
+  gem 'terminal-table'
 end

@@ -62,6 +62,7 @@ namespace :index do
     Rake::Task[:environment].invoke
     puts "--------------catch articles start-------------------"
     time_start = Time.new.to_i
+    print_arr = []
     # sql="show tables"
     # tables=ActiveRecord::Base.connection.execute(sql) # 得到当前数据库所有表
     sql = "select database()"
@@ -69,25 +70,24 @@ namespace :index do
 
     sql="use information_schema"
     ActiveRecord::Base.connection.execute(sql)
-    sql = "select TABLE_SCHEMA,TABLE_NAME,TABLE_TYPE,ENGINE,TABLE_ROWS,AVG_ROW_LENGTH,DATA_LENGTH,INDEX_LENGTH,(DATA_LENGTH+INDEX_LENGTH) as TABLE_LENGTH,AUTO_INCREMENT,CREATE_TIME,TABLE_COLLATION from information_schema.tables where table_schema = '#{database}'"
+    sql = "select TABLE_NAME,ENGINE,TABLE_ROWS,AVG_ROW_LENGTH,DATA_LENGTH,INDEX_LENGTH,(DATA_LENGTH+INDEX_LENGTH) as TABLE_LENGTH,CREATE_TIME from information_schema.tables where table_schema = '#{database}'"
     tables = ActiveRecord::Base.connection.execute(sql)
-    puts_line(12,10)
-    head = ["数据库","表名","表类型","表引擎","表数据行数","平均行长度","数据大小","索引大小","总数据量","auto_increment","创建时间","字符集排序规则"]
-    puts_line_arr(head,10)
-    puts_line(12,10)
 
+    head = ["表名","表引擎","表数据行数","平均行长度","数据大小","索引大小","总数据量","创建时间"]
+    print_arr << head
     tables.each do |item|
       item.each_with_index do |data,index|
-        if [6,7,8].include?(index)
+        if [4,5,6].include?(index)
           item[index] = byte2mb(data)
         end
-        if 10 == index
-          item[index] = item[index].to_s[0..20]
+        if 7 == index
+          item[index] = item[index].to_s[0...20]
         end
       end
-      puts_line_arr(item,10)
+      print_arr << item
     end
-    puts_line(12,10)
+    table = Terminal::Table.new :rows => print_arr
+    puts table
     time_end = Time.new.to_i
     puts "-----------catch members end----------Time:#{time_end-time_start}s------"
   end
