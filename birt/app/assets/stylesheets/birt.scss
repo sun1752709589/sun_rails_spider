@@ -1,0 +1,9 @@
+@import "birt/base/*";
+@import "birt/components/table";
+@import "birt/components/loading";
+
+.birt {
+  @include birt_base;
+  width: 100%;
+  padding: 12px;
+}

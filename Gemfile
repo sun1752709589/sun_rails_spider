@@ -34,7 +34,7 @@ gem "hiredis", "~> 0.4.5"
 gem 'dalli' #, github: 'mperham/dalli'
 # background cron
 gem 'sidekiq'
-
+gem 'highcharts-rails', '~> 4.1'
 group :development, :test do
   gem 'byebug'
   gem 'pry'
@@ -46,6 +46,6 @@ group :development, :test do
   gem 'irbtools', require: 'irbtools/binding'
   gem 'settingslogic'
   gem 'modular_migration'
-  gem 'birt'
   gem 'terminal-table'
+  gem 'birt', "~> 0.1.7"
 end

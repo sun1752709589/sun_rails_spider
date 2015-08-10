@@ -1,0 +1,38 @@
+# coding: utf-8
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'birt/version'
+
+Gem::Specification.new do |spec|
+  spec.name = "birt"
+  spec.version = Birt::VERSION
+  spec.authors = ["sunyafei"]
+  spec.email = ["1752709589@qq.com"]
+
+  spec.summary = %q{百灵报表（birt）rails runtime}
+  spec.description = %q{birt report rails runtime}
+  spec.homepage = "https://github.com/mumaoxi/birt"
+  spec.licenses = ["MIT"]
+
+  # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
+  # delete this section to allow pushing this gem to any host.
+  if spec.respond_to?(:metadata)
+    spec.metadata['allowed_push_host'] = "https://rubygems.org"
+  else
+    raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
+  end
+
+  spec.files = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(tmp|log|test|spec|features|pkg|public)/}) }
+  spec.bindir = "exe"
+  spec.executables = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  spec.require_paths = ["lib","lib/core","lib/core/chart","lib/core/table"]
+
+  spec.add_development_dependency "bundler", "~> 1.9"
+  spec.add_development_dependency "rake", "~> 10.4"
+  spec.add_development_dependency 'rails', '~> 0'
+
+  spec.add_runtime_dependency "core_extend", "~> 0.1.5"
+  spec.add_runtime_dependency "highcharts-rails", "~> 4.1"
+  spec.add_runtime_dependency "mysql2","~> 0.3.19"
+
+end
