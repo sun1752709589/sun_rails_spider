@@ -7,8 +7,8 @@ require "birt/version"
 Gem::Specification.new do |s|
   s.name        = "birt"
   s.version     = Birt::VERSION
-  s.authors     = ["sunyafei"]
-  s.email       = ["1752709589@qq.com"]
+  s.authors = ["saxer"]
+  s.email = ["15201280641@qq.com"]
   s.homepage    = "http://www.baidu.com"
   s.summary     = "birt report"
   s.description = "birt report"
