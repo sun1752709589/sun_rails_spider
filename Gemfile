@@ -46,6 +46,6 @@ group :development, :test do
   gem 'irbtools', require: 'irbtools/binding'
   gem 'settingslogic'
   gem 'modular_migration'
-  gem 'terminal-table'
   gem 'birt', "~> 0.1.7"
+  gem 'mysql_double_index'
 end
