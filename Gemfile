@@ -1,5 +1,5 @@
 source 'https://ruby.taobao.org'
-gem 'rails', '4.2.3'
+gem 'rails', '4.2.4'
 gem 'mysql2'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -46,6 +46,6 @@ group :development, :test do
   gem 'irbtools', require: 'irbtools/binding'
   gem 'settingslogic'
   gem 'modular_migration'
-  gem 'birt', "~> 0.1.7"
+  # gem 'birt', "~> 0.1.7"
   gem 'mysql_double_index'
 end
